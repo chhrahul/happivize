@@ -1,0 +1,322 @@
+.popupally-pro-outer-preview-iejsye-{{num}}{
+width:{{iejsye-width}}px;
+height:{{iejsye-height}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}}{
+width:{{iejsye-width-960}}px;
+height:{{iejsye-height-960}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}}{
+width:{{iejsye-width-640}}px;
+height:{{iejsye-height-640}}px;
+}
+.popupally-pro-outer-preview-iejsye-{{num}},
+.popupally-pro-outer-960-preview-iejsye-{{num}},
+.popupally-pro-outer-640-preview-iejsye-{{num}}{
+background-color:{{iejsye-background-color}};
+background-image:{{iejsye-background-image}};
+background-size:{{iejsye-background-image-size}};
+background-repeat:no-repeat;
+}
+.popupally-pro-outer-preview-iejsye-{{num}},
+.popupally-pro-outer-960-preview-iejsye-{{num}},
+.popupally-pro-outer-640-preview-iejsye-{{num}} {
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+margin:10px 10px;
+}
+.popupally-pro-inner-iejsye-{{num}}{
+position:relative;
+overflow:visible;
+width:auto;
+height:auto;
+padding:0;
+margin:0;
+text-align:center;
+}
+.popupally-pro-inner-iejsye-{{num}} {
+display:inline-block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+position:absolute;
+line-height:18px;
+}
+.popupally-pro-inner-iejsye-{{num}} .desc-pro-iejsye {
+position:absolute;
+display:block;
+width:{{iejsye-headline-width}}px;
+height:{{iejsye-headline-height}}px;
+font-family:{{iejsye-headline-font}};
+font-size:{{iejsye-headline-font-size}}px;
+line-height:{{iejsye-headline-line-height}}px;
+font-weight:{{iejsye-headline-font-weight}};
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+cursor:pointer;
+text-align:{{iejsye-headline-align}};
+color:{{iejsye-headline-color}};
+top:{{iejsye-headline-top}}px;
+left:{{iejsye-headline-left}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .desc-pro-iejsye {
+width:{{iejsye-headline-960-width}}px;
+height:{{iejsye-headline-960-height}}px;
+font-size:{{iejsye-headline-960-font-size}}px;
+line-height:{{iejsye-headline-960-line-height}}px;
+top:{{iejsye-headline-960-top}}px;
+left:{{iejsye-headline-960-left}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .desc-pro-iejsye {
+width:{{iejsye-headline-640-width}}px;
+height:{{iejsye-headline-640-height}}px;
+font-size:{{iejsye-headline-640-font-size}}px;
+line-height:{{iejsye-headline-640-line-height}}px;
+top:{{iejsye-headline-640-top}}px;
+left:{{iejsye-headline-640-left}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .textbox-1-pro-iejsye {
+position:absolute;
+display:block;
+width:{{iejsye-textbox-1-width}}px;
+height:{{iejsye-textbox-1-height}}px;
+font-family:{{iejsye-textbox-1-font}};
+font-size:{{iejsye-textbox-1-font-size}}px;
+line-height:{{iejsye-textbox-1-line-height}}px;
+font-weight:{{iejsye-textbox-1-font-weight}};
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+cursor:pointer;
+text-align:{{iejsye-textbox-1-align}};
+color:{{iejsye-textbox-1-color}};
+top:{{iejsye-textbox-1-top}}px;
+left:{{iejsye-textbox-1-left}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .textbox-1-pro-iejsye {
+width:{{iejsye-textbox-1-960-width}}px;
+height:{{iejsye-textbox-1-960-height}}px;
+font-size:{{iejsye-textbox-1-960-font-size}}px;
+line-height:{{iejsye-textbox-1-960-line-height}}px;
+top:{{iejsye-textbox-1-960-top}}px;
+left:{{iejsye-textbox-1-960-left}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .textbox-1-pro-iejsye {
+width:{{iejsye-textbox-1-640-width}}px;
+height:{{iejsye-textbox-1-640-height}}px;
+font-size:{{iejsye-textbox-1-640-font-size}}px;
+line-height:{{iejsye-textbox-1-640-line-height}}px;
+top:{{iejsye-textbox-1-640-top}}px;
+left:{{iejsye-textbox-1-640-left}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .textbox-2-pro-iejsye {
+position:absolute;
+display:block;
+width:{{iejsye-textbox-2-width}}px;
+height:{{iejsye-textbox-2-height}}px;
+font-family:{{iejsye-textbox-2-font}};
+font-size:{{iejsye-textbox-2-font-size}}px;
+line-height:{{iejsye-textbox-2-line-height}}px;
+font-weight:{{iejsye-textbox-2-font-weight}};
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+cursor:pointer;
+text-align:{{iejsye-textbox-2-align}};
+color:{{iejsye-textbox-2-color}};
+top:{{iejsye-textbox-2-top}}px;
+left:{{iejsye-textbox-2-left}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .textbox-2-pro-iejsye {
+width:{{iejsye-textbox-2-960-width}}px;
+height:{{iejsye-textbox-2-960-height}}px;
+font-size:{{iejsye-textbox-2-960-font-size}}px;
+line-height:{{iejsye-textbox-2-960-line-height}}px;
+top:{{iejsye-textbox-2-960-top}}px;
+left:{{iejsye-textbox-2-960-left}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .textbox-2-pro-iejsye {
+width:{{iejsye-textbox-2-640-width}}px;
+height:{{iejsye-textbox-2-640-height}}px;
+font-size:{{iejsye-textbox-2-640-font-size}}px;
+line-height:{{iejsye-textbox-2-640-line-height}}px;
+top:{{iejsye-textbox-2-640-top}}px;
+left:{{iejsye-textbox-2-640-left}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .image-1-pro-iejsye,
+.popupally-pro-inner-iejsye-{{num}} .image-2-pro-iejsye {
+position:absolute;
+display:inline-block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:50%;
+}
+.popupally-pro-inner-iejsye-{{num}} .image-1-pro-iejsye {
+top:{{iejsye-image-1-top}}px;
+left:{{iejsye-image-1-left}}px;
+background-image:{{iejsye-image-1}};
+width:{{iejsye-image-1-width}}px;
+height:{{iejsye-image-1-height}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .image-2-pro-iejsye {
+top:{{iejsye-image-2-top}}px;
+left:{{iejsye-image-2-left}}px;
+background-image:{{iejsye-image-2}};
+width:{{iejsye-image-2-width}}px;
+height:{{iejsye-image-2-height}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .image-1-pro-iejsye {
+top:{{iejsye-image-1-960-top}}px;
+left:{{iejsye-image-1-960-left}}px;
+width:{{iejsye-image-1-960-width}}px;
+height:{{iejsye-image-1-960-height}}px;
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .image-2-pro-iejsye {
+top:{{iejsye-image-2-960-top}}px;
+left:{{iejsye-image-2-960-left}}px;
+width:{{iejsye-image-2-960-width}}px;
+height:{{iejsye-image-2-960-height}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .image-1-pro-iejsye {
+top:{{iejsye-image-1-640-top}}px;
+left:{{iejsye-image-1-640-left}}px;
+width:{{iejsye-image-1-640-width}}px;
+height:{{iejsye-image-1-640-height}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .image-2-pro-iejsye {
+top:{{iejsye-image-2-640-top}}px;
+left:{{iejsye-image-2-640-left}}px;
+width:{{iejsye-image-2-640-width}}px;
+height:{{iejsye-image-2-640-height}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-center-block-iejsye{
+display:table-cell;
+vertical-align:middle;
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+line-height:inherit;
+text-align:inherit;
+color:inherit;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye{
+display:table;
+position:absolute;
+vertical-align:middle;
+border:none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+text-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+cursor: pointer;
+-webkit-border-radius: 3pt;
+-moz-border-radius: 3pt;
+border-radius: 3pt;
+padding:0;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+background-size:contain;
+background-repeat:no-repeat;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye{
+top:{{iejsye-choice-1-top}}px;
+left:{{iejsye-choice-1-left}}px;
+font-family:{{iejsye-choice-1-font}};
+font-size:{{iejsye-choice-1-font-size}}px;
+font-weight:{{iejsye-choice-1-font-weight}};
+line-height:{{iejsye-choice-1-line-height}}px;
+text-align:{{iejsye-choice-1-align}};
+color:{{iejsye-choice-1-color}};
+width:{{iejsye-choice-1-width}}px;
+height:{{iejsye-choice-1-height}}px;
+background-image:{{iejsye-choice-1-background-image}};
+background-color:{{iejsye-choice-1-background-color}};
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye{
+top:{{iejsye-choice-1-960-top}}px;
+left:{{iejsye-choice-1-960-left}}px;
+font-size:{{iejsye-choice-1-960-font-size}}px;
+line-height:{{iejsye-choice-1-960-line-height}}px;
+width:{{iejsye-choice-1-960-width}}px;
+height:{{iejsye-choice-1-960-height}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye{
+top:{{iejsye-choice-1-640-top}}px;
+left:{{iejsye-choice-1-640-left}}px;
+font-size:{{iejsye-choice-1-640-font-size}}px;
+line-height:{{iejsye-choice-1-640-line-height}}px;
+width:{{iejsye-choice-1-640-width}}px;
+height:{{iejsye-choice-1-640-height}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye{
+top:{{iejsye-choice-2-top}}px;
+left:{{iejsye-choice-2-left}}px;
+font-family:{{iejsye-choice-2-font}};
+font-size:{{iejsye-choice-2-font-size}}px;
+font-weight:{{iejsye-choice-2-font-weight}};
+line-height:{{iejsye-choice-2-line-height}}px;
+text-align:{{iejsye-choice-2-align}};
+color:{{iejsye-choice-2-color}};
+width:{{iejsye-choice-2-width}}px;
+height:{{iejsye-choice-2-height}}px;
+background-image:{{iejsye-choice-2-background-image}};
+background-color:{{iejsye-choice-2-background-color}};
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye{
+top:{{iejsye-choice-2-960-top}}px;
+left:{{iejsye-choice-2-960-left}}px;
+font-size:{{iejsye-choice-2-960-font-size}}px;
+line-height:{{iejsye-choice-2-960-line-height}}px;
+width:{{iejsye-choice-2-960-width}}px;
+height:{{iejsye-choice-2-960-height}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye{
+top:{{iejsye-choice-2-640-top}}px;
+left:{{iejsye-choice-2-640-left}}px;
+font-size:{{iejsye-choice-2-640-font-size}}px;
+line-height:{{iejsye-choice-2-640-line-height}}px;
+width:{{iejsye-choice-2-640-width}}px;
+height:{{iejsye-choice-2-640-height}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye{
+top:{{iejsye-choice-3-top}}px;
+left:{{iejsye-choice-3-left}}px;
+font-family:{{iejsye-choice-3-font}};
+font-size:{{iejsye-choice-3-font-size}}px;
+font-weight:{{iejsye-choice-3-font-weight}};
+line-height:{{iejsye-choice-3-line-height}}px;
+text-align:{{iejsye-choice-3-align}};
+color:{{iejsye-choice-3-color}};
+width:{{iejsye-choice-3-width}}px;
+height:{{iejsye-choice-3-height}}px;
+background-image:{{iejsye-choice-3-background-image}};
+background-color:{{iejsye-choice-3-background-color}};
+}
+.popupally-pro-outer-960-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye{
+top:{{iejsye-choice-3-960-top}}px;
+left:{{iejsye-choice-3-960-left}}px;
+font-size:{{iejsye-choice-3-960-font-size}}px;
+line-height:{{iejsye-choice-3-960-line-height}}px;
+width:{{iejsye-choice-3-960-width}}px;
+height:{{iejsye-choice-3-960-height}}px;
+}
+.popupally-pro-outer-640-preview-iejsye-{{num}} .popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye{
+top:{{iejsye-choice-3-640-top}}px;
+left:{{iejsye-choice-3-640-left}}px;
+font-size:{{iejsye-choice-3-640-font-size}}px;
+line-height:{{iejsye-choice-3-640-line-height}}px;
+width:{{iejsye-choice-3-640-width}}px;
+height:{{iejsye-choice-3-640-height}}px;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye{
+cursor:pointer;
+}
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-1-iejsye:hover,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-2-iejsye:hover,
+.popupally-pro-inner-iejsye-{{num}} .popupally-pro-choice-3-iejsye:hover{
+opacity:0.5;
+}

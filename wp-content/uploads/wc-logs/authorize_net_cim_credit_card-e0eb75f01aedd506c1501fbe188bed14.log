@@ -1,0 +1,3422 @@
+03-09-2017 @ 00:36:49 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <profile>
+    <merchantCustomerId>93</merchantCustomerId>
+    <email>aimee@aimeeserafini.com</email>
+    <paymentProfiles>
+      <billTo>
+        <firstName>Aimee</firstName>
+        <lastName>Serafini</lastName>
+        <address>461 E Beechwold Blvd</address>
+        <city>Columbus</city>
+        <state>OH</state>
+        <zip>43214</zip>
+        <country>USA</country>
+        <phoneNumber>614-653-8448</phoneNumber>
+      </billTo>
+      <payment>
+        <creditCard>
+          <cardNumber>4***********1881</cardNumber>
+          <expirationDate>01-18</expirationDate>
+          <cardCode>***</cardCode>
+        </creditCard>
+      </payment>
+    </paymentProfiles>
+  </profile>
+  <validationMode>none</validationMode>
+</createCustomerProfileRequest>
+duration: 0.77857s
+
+03-09-2017 @ 00:36:49 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 596
+    [date] => Thu, 09 Mar 2017 00:36:49 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerProfileResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <customerProfileId>1227599992</customerProfileId>
+  <customerPaymentProfileIdList>
+    <numericString>1227999103</numericString>
+  </customerPaymentProfileIdList>
+  <customerShippingAddressIdList/>
+  <validationDirectResponseList/>
+</createCustomerProfileResponse>
+
+03-09-2017 @ 00:36:49 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerShippingAddressRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <customerProfileId>1227599992</customerProfileId>
+  <address>
+    <firstName>Aimee</firstName>
+    <lastName>Serafini</lastName>
+    <address>461 E Beechwold Blvd</address>
+    <city>Columbus</city>
+    <state>OH</state>
+    <zip>43214</zip>
+    <country>USA</country>
+  </address>
+</createCustomerShippingAddressRequest>
+duration: 0.47991s
+
+03-09-2017 @ 00:36:49 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 494
+    [date] => Thu, 09 Mar 2017 00:36:49 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerShippingAddressResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <customerProfileId>1227599992</customerProfileId>
+  <customerAddressId>1232040180</customerAddressId>
+</createCustomerShippingAddressResponse>
+
+03-09-2017 @ 00:36:50 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <transaction>
+    <profileTransAuthCapture>
+      <amount>2.00</amount>
+      <lineItems>
+        <itemId>205</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItems>
+      <customerProfileId>1227599992</customerProfileId>
+      <customerPaymentProfileId>1227999103</customerPaymentProfileId>
+      <customerShippingAddressId>1232040180</customerShippingAddressId>
+      <order>
+        <invoiceNumber>2517</invoiceNumber>
+        <description>Happivize - Order 2517</description>
+      </order>
+      <cardCode>***</cardCode>
+    </profileTransAuthCapture>
+  </transaction>
+  <extraOptions>x_solution_id=A1000065&amp;x_customer_ip=67.149.226.99&amp;x_currency_code=USD&amp;x_duplicate_window=0&amp;x_delim_char=%7C&amp;x_encap_char=%3A</extraOptions>
+</createCustomerProfileTransactionRequest>
+duration: 0.85481s
+
+03-09-2017 @ 00:36:50 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 957
+    [date] => Thu, 09 Mar 2017 00:36:50 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerProfileTransactionResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00027</code>
+      <text>The credit card number is invalid.</text>
+    </message>
+  </messages>
+  <directResponse>:2:|:4:|:37:|:The credit card number is invalid.:|::|:U:|:20480449421:|:2517:|:Happivize - Order 2517:|:2.00:|:CC:|:auth_capture:|:93:|:Aimee:|:Serafini:|::|:461 E Beechwold Blvd:|:Columbus:|:OH:|:43214:|:USA:|:614-653-8448:|::|:aimee@aimeeserafini.com:|:Aimee:|:Serafini:|::|:461 E Beechwold Blvd:|:Columbus:|:OH:|:43214:|:USA:|::|::|::|::|::|:BA7E54BC3D3B360F76BA44BCC1D3CC1D:|::|::|::|::|::|::|::|::|::|::|::|::|:XXXX1881:|:Visa:|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|:1232040180:|::</directResponse>
+</createCustomerProfileTransactionResponse>
+
+03-09-2017 @ 00:36:51 - Status code 2 (E00027): The credit card number is invalid. Code: 37 - The credit card number is invalid. Transaction ID 20480449421
+03-09-2017 @ 00:37:52 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <customerProfileId>1227599992</customerProfileId>
+  <paymentProfile>
+    <billTo>
+      <firstName>Aimee</firstName>
+      <lastName>Serafini</lastName>
+      <address>461 E Beechwold Blvd</address>
+      <city>Columbus</city>
+      <state>OH</state>
+      <zip>43214</zip>
+      <country>USA</country>
+      <phoneNumber>614-653-8448</phoneNumber>
+    </billTo>
+    <payment>
+      <creditCard>
+        <cardNumber>4***********1111</cardNumber>
+        <expirationDate>01-18</expirationDate>
+        <cardCode>***</cardCode>
+      </creditCard>
+    </payment>
+  </paymentProfile>
+  <validationMode>none</validationMode>
+</createCustomerPaymentProfileRequest>
+duration: 0.55605s
+
+03-09-2017 @ 00:37:52 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 506
+    [date] => Thu, 09 Mar 2017 00:37:52 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerPaymentProfileResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <customerProfileId>1227599992</customerProfileId>
+  <customerPaymentProfileId>1227999197</customerPaymentProfileId>
+</createCustomerPaymentProfileResponse>
+
+03-09-2017 @ 00:37:53 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1227599992</customerProfileId>
+</getCustomerProfileRequest>
+duration: 0.53267s
+
+03-09-2017 @ 00:37:53 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 1680
+    [date] => Thu, 09 Mar 2017 00:37:53 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<getCustomerProfileResponse>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <profile>
+    <merchantCustomerId>93</merchantCustomerId>
+    <email>aimee@aimeeserafini.com</email>
+    <customerProfileId>1227599992</customerProfileId>
+    <paymentProfiles>
+      <billTo>
+        <firstName>Aimee</firstName>
+        <lastName>Serafini</lastName>
+        <address>461 E Beechwold Blvd</address>
+        <city>Columbus</city>
+        <state>OH</state>
+        <zip>43214</zip>
+        <country>USA</country>
+        <phoneNumber>614-653-8448</phoneNumber>
+      </billTo>
+      <customerPaymentProfileId>1227999197</customerPaymentProfileId>
+      <payment>
+        <creditCard>
+          <cardNumber>XXXX1111</cardNumber>
+          <expirationDate>XXXX</expirationDate>
+          <cardType>Visa</cardType>
+        </creditCard>
+      </payment>
+    </paymentProfiles>
+    <paymentProfiles>
+      <billTo>
+        <firstName>Aimee</firstName>
+        <lastName>Serafini</lastName>
+        <address>461 E Beechwold Blvd</address>
+        <city>Columbus</city>
+        <state>OH</state>
+        <zip>43214</zip>
+        <country>USA</country>
+        <phoneNumber>614-653-8448</phoneNumber>
+      </billTo>
+      <customerPaymentProfileId>1227999103</customerPaymentProfileId>
+      <payment>
+        <creditCard>
+          <cardNumber>XXXX1881</cardNumber>
+          <expirationDate>XXXX</expirationDate>
+          <cardType>Visa</cardType>
+        </creditCard>
+      </payment>
+    </paymentProfiles>
+    <shipToList>
+      <firstName>Aimee</firstName>
+      <lastName>Serafini</lastName>
+      <address>461 E Beechwold Blvd</address>
+      <city>Columbus</city>
+      <state>OH</state>
+      <zip>43214</zip>
+      <country>USA</country>
+      <customerAddressId>1232040180</customerAddressId>
+    </shipToList>
+  </profile>
+</getCustomerProfileResponse>
+
+03-09-2017 @ 00:37:53 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <transaction>
+    <profileTransAuthCapture>
+      <amount>2.00</amount>
+      <lineItems>
+        <itemId>206</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItems>
+      <customerProfileId>1227599992</customerProfileId>
+      <customerPaymentProfileId>1227999197</customerPaymentProfileId>
+      <customerShippingAddressId>1232040180</customerShippingAddressId>
+      <order>
+        <invoiceNumber>2517</invoiceNumber>
+        <description>Happivize - Order 2517</description>
+      </order>
+      <cardCode>***</cardCode>
+    </profileTransAuthCapture>
+  </transaction>
+  <extraOptions>x_solution_id=A1000065&amp;x_customer_ip=67.149.226.99&amp;x_currency_code=USD&amp;x_duplicate_window=0&amp;x_delim_char=%7C&amp;x_encap_char=%3A</extraOptions>
+</createCustomerProfileTransactionRequest>
+duration: 0.8035s
+
+03-09-2017 @ 00:37:53 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 957
+    [date] => Thu, 09 Mar 2017 00:37:53 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerProfileTransactionResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00027</code>
+      <text>The credit card number is invalid.</text>
+    </message>
+  </messages>
+  <directResponse>:2:|:4:|:37:|:The credit card number is invalid.:|::|:U:|:20480451046:|:2517:|:Happivize - Order 2517:|:2.00:|:CC:|:auth_capture:|:93:|:Aimee:|:Serafini:|::|:461 E Beechwold Blvd:|:Columbus:|:OH:|:43214:|:USA:|:614-653-8448:|::|:aimee@aimeeserafini.com:|:Aimee:|:Serafini:|::|:461 E Beechwold Blvd:|:Columbus:|:OH:|:43214:|:USA:|::|::|::|::|::|:BB82AEC438EE23354DAA8C1F21DA4AAD:|::|::|::|::|::|::|::|::|::|::|::|::|:XXXX1111:|:Visa:|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|:1232040180:|::</directResponse>
+</createCustomerProfileTransactionResponse>
+
+03-09-2017 @ 00:37:54 - Status code 2 (E00027): The credit card number is invalid. Code: 37 - The credit card number is invalid. Transaction ID 20480451046
+03-09-2017 @ 00:41:31 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1227599992</customerProfileId>
+</getCustomerProfileRequest>
+duration: 0.38584s
+
+03-09-2017 @ 00:41:31 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 411
+    [date] => Thu, 09 Mar 2017 00:41:31 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<getCustomerProfileResponse>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</getCustomerProfileResponse>
+
+03-09-2017 @ 00:41:31 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+03-09-2017 @ 00:41:50 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <transaction>
+    <profileTransAuthCapture>
+      <amount>2.00</amount>
+      <lineItems>
+        <itemId>207</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItems>
+      <customerProfileId>1227599992</customerProfileId>
+      <customerPaymentProfileId>1227999197</customerPaymentProfileId>
+      <customerShippingAddressId>1232040180</customerShippingAddressId>
+      <order>
+        <invoiceNumber>2517</invoiceNumber>
+        <description>Happivize - Order 2517</description>
+      </order>
+      <cardCode>***</cardCode>
+    </profileTransAuthCapture>
+  </transaction>
+  <extraOptions>x_solution_id=A1000065&amp;x_customer_ip=67.149.226.99&amp;x_currency_code=USD&amp;x_duplicate_window=0&amp;x_delim_char=%7C&amp;x_encap_char=%3A</extraOptions>
+</createCustomerProfileTransactionRequest>
+duration: 0.46848s
+
+03-09-2017 @ 00:41:50 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 458
+    [date] => Thu, 09 Mar 2017 00:41:50 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerProfileTransactionResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</createCustomerProfileTransactionResponse>
+
+03-09-2017 @ 00:41:51 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+03-09-2017 @ 00:42:03 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1227599992</customerProfileId>
+</getCustomerProfileRequest>
+duration: 0.60221s
+
+03-09-2017 @ 00:42:03 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 411
+    [date] => Thu, 09 Mar 2017 00:42:03 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<getCustomerProfileResponse>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</getCustomerProfileResponse>
+
+03-09-2017 @ 00:42:03 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+03-09-2017 @ 00:42:21 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<deleteCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1227599992</customerProfileId>
+  <customerPaymentProfileId>1227999197</customerPaymentProfileId>
+</deleteCustomerPaymentProfileRequest>
+duration: 0.58548s
+
+03-09-2017 @ 00:42:21 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 431
+    [date] => Thu, 09 Mar 2017 00:42:21 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<deleteCustomerPaymentProfileResponse>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</deleteCustomerPaymentProfileResponse>
+
+03-09-2017 @ 00:42:21 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+#0 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/api/class-sv-wc-api-base.php(180): WC_Authorize_Net_CIM_API->do_post_parse_response_validation()
+#1 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/api/class-sv-wc-api-base.php(113): SV_WC_API_Base->handle_response(Array)
+#2 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/includes/api/class-wc-authorize-net-cim-api.php(522): SV_WC_API_Base->perform_request(Object(WC_Authorize_Net_CIM_API_Payment_Profile_Request))
+#3 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/payment-tokens/class-sv-wc-payment-gateway-payment-tokens-handler.php(283): WC_Authorize_Net_CIM_API->remove_tokenized_payment_method(1227999197, '1227599992')
+#4 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-my-payment-methods.php(725): SV_WC_Payment_Gateway_Payment_Tokens_Handler->remove_token(93, '1227999197')
+#5 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-my-payment-methods.php(85): SV_WC_Payment_Gateway_My_Payment_Methods->handle_payment_method_actions()
+#6 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-plugin.php(321): SV_WC_Payment_Gateway_My_Payment_Methods->__construct(Object(WC_Authorize_Net_CIM))
+#7 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-plugin.php(287): SV_WC_Payment_Gateway_Plugin->get_my_payment_methods_instance()
+#8 [internal function]: SV_WC_Payment_Gateway_Plugin->maybe_init_my_payment_methods(Object(WP))
+#9 /home/nginx/domains/happivize.com/public/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#10 /home/nginx/domains/happivize.com/public/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#11 /home/nginx/domains/happivize.com/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#12 /home/nginx/domains/happivize.com/public/wp-includes/class-wp.php(746): do_action_ref_array('wp', Array)
+#13 /home/nginx/domains/happivize.com/public/wp-includes/functions.php(955): WP->main('')
+#14 /home/nginx/domains/happivize.com/public/wp-blog-header.php(16): wp()
+#15 /home/nginx/domains/happivize.com/public/index.php(17): require('/home/nginx/dom...')
+#16 {main}
+03-09-2017 @ 00:42:29 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<deleteCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1227599992</customerProfileId>
+  <customerPaymentProfileId>1227999103</customerPaymentProfileId>
+</deleteCustomerPaymentProfileRequest>
+duration: 0.55441s
+
+03-09-2017 @ 00:42:29 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 431
+    [date] => Thu, 09 Mar 2017 00:42:29 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<deleteCustomerPaymentProfileResponse>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</deleteCustomerPaymentProfileResponse>
+
+03-09-2017 @ 00:42:29 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+#0 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/api/class-sv-wc-api-base.php(180): WC_Authorize_Net_CIM_API->do_post_parse_response_validation()
+#1 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/api/class-sv-wc-api-base.php(113): SV_WC_API_Base->handle_response(Array)
+#2 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/includes/api/class-wc-authorize-net-cim-api.php(522): SV_WC_API_Base->perform_request(Object(WC_Authorize_Net_CIM_API_Payment_Profile_Request))
+#3 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/payment-tokens/class-sv-wc-payment-gateway-payment-tokens-handler.php(283): WC_Authorize_Net_CIM_API->remove_tokenized_payment_method(1227999103, '1227599992')
+#4 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-my-payment-methods.php(725): SV_WC_Payment_Gateway_Payment_Tokens_Handler->remove_token(93, '1227999103')
+#5 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-my-payment-methods.php(85): SV_WC_Payment_Gateway_My_Payment_Methods->handle_payment_method_actions()
+#6 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-plugin.php(321): SV_WC_Payment_Gateway_My_Payment_Methods->__construct(Object(WC_Authorize_Net_CIM))
+#7 /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-gateway-authorize-net-cim/lib/skyverge/woocommerce/payment-gateway/class-sv-wc-payment-gateway-plugin.php(287): SV_WC_Payment_Gateway_Plugin->get_my_payment_methods_instance()
+#8 [internal function]: SV_WC_Payment_Gateway_Plugin->maybe_init_my_payment_methods(Object(WP))
+#9 /home/nginx/domains/happivize.com/public/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#10 /home/nginx/domains/happivize.com/public/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#11 /home/nginx/domains/happivize.com/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#12 /home/nginx/domains/happivize.com/public/wp-includes/class-wp.php(746): do_action_ref_array('wp', Array)
+#13 /home/nginx/domains/happivize.com/public/wp-includes/functions.php(955): WP->main('')
+#14 /home/nginx/domains/happivize.com/public/wp-blog-header.php(16): wp()
+#15 /home/nginx/domains/happivize.com/public/index.php(17): require('/home/nginx/dom...')
+#16 {main}
+03-09-2017 @ 00:43:04 - Request
+method: POST
+uri: https://api2.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>**********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2517</refId>
+  <customerProfileId>1227599992</customerProfileId>
+  <paymentProfile>
+    <billTo>
+      <firstName>Aimee</firstName>
+      <lastName>Serafini</lastName>
+      <address>461 E Beechwold Blvd</address>
+      <city>Columbus</city>
+      <state>OH</state>
+      <zip>43214</zip>
+      <country>USA</country>
+      <phoneNumber>614-653-8448</phoneNumber>
+    </billTo>
+    <payment>
+      <creditCard>
+        <cardNumber>4***********1111</cardNumber>
+        <expirationDate>01-18</expirationDate>
+        <cardCode>***</cardCode>
+      </creditCard>
+    </payment>
+  </paymentProfile>
+  <validationMode>none</validationMode>
+</createCustomerPaymentProfileRequest>
+duration: 0.60046s
+
+03-09-2017 @ 00:43:04 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [x-cnection] => close
+    [content-length] => 450
+    [date] => Thu, 09 Mar 2017 00:43:04 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerPaymentProfileResponse>
+  <refId>2517</refId>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+</createCustomerPaymentProfileResponse>
+
+03-09-2017 @ 00:43:05 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+03-09-2017 @ 09:50:43 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2564</refId>
+  <transactionRequest>
+    <transactionType>authOnlyTransaction</transactionType>
+    <amount>596.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUzMDlBNjAzREQ3Q0Y3NENEOTI5RjEwNTkzOEU3OTg5QzVBQUE3QUQxRkNEMEE2MzFFNzI0QjA4NEQ3NzIxNzk1NDI4OUVFRjhBRDk3MjUzNTkxOUZEMDFGN0QyMTVGNzVDIiwidG9rZW4iOiI5NDg5MDUzMDQxODA1MjUyOTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2564</invoiceNumber>
+      <description>Happivize - Order 2564</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>209</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>210</itemId>
+        <name>Project Gratitude + Private ...</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>211</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>abff@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>asdasd</firstName>
+      <lastName>sadasdas</lastName>
+      <address>uuu</address>
+      <city>una</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+      <phoneNumber>12345678798</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>asdasd</firstName>
+      <lastName>sadasdas</lastName>
+      <address>uuu</address>
+      <city>una</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.45864s
+
+03-09-2017 @ 09:50:43 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 451
+    [date] => Thu, 09 Mar 2017 09:50:43 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2564</refId>
+  <messages>
+    <resultCode>Error</resultCode>
+    <message>
+      <code>E00007</code>
+      <text>User authentication failed due to invalid authentication values.</text>
+    </message>
+  </messages>
+  <transactionResponse/>
+</createTransactionResponse>
+
+03-09-2017 @ 09:50:44 - Code: E00007, Message: User authentication failed due to invalid authentication values.
+03-09-2017 @ 11:06:52 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2564</refId>
+  <transactionRequest>
+    <transactionType>authOnlyTransaction</transactionType>
+    <amount>596.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyOTM1MkE5NDkyQ0UzQTFENjVBNUU4Njg0NEIxQkYyRjYxMTlBMDZBQUI0QzY4NEMwMUYwNjYyMEU1QUIzQTY5RkI4QzBGMUYxNDgwQTM1NTJCNURFMkE0MjlFODBDOEZDIiwidG9rZW4iOiI5NDg5MDU3NjEwMDU5MjYyNzA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2564</invoiceNumber>
+      <description>Happivize - Order 2564</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>212</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>213</itemId>
+        <name>Project Gratitude + Private ...</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>214</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>abff@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>sdfssd</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+      <phoneNumber>12345678798</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>sdfssd</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.83846s
+
+03-09-2017 @ 11:06:52 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 859
+    [date] => Thu, 09 Mar 2017 11:06:52 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2564</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>66397C5BB9D78B6BC9CD7A8F20410700</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-09-2017 @ 11:06:52 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-09-2017 @ 11:15:22 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2564</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>596.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyRUM5MjRGMEE0MzY5NDNFNDg4MkExRjNDRDFFQThGQjY2RTMyQTI1ODI5RjJCRDI4REZCNEUwMkZDQ0E5MERGRkEzRUI4QkI0RkMwNzUyQTU0OTZDRUQwQjM1QUJDNzdEIiwidG9rZW4iOiI5NDg5MDU4MTIwMDIwMjYzODA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2564</invoiceNumber>
+      <description>Happivize - Order 2564</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>215</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>216</itemId>
+        <name>Project Gratitude + Private ...</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>217</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>abff@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+      <phoneNumber>12345678798</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.96324s
+
+03-09-2017 @ 11:15:22 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 865
+    [date] => Thu, 09 Mar 2017 11:15:22 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2564</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>66397C5BB9D78B6BC9CD7A8F20410700</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX0015</accountNumber>
+    <accountType>MasterCard</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-09-2017 @ 11:15:23 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-09-2017 @ 13:00:44 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2564</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>596.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyRTk4QzQ5Njc3Qjg1M0JEQzM0QkNBRDc5MEUxOUE5MzQ3MThDN0M0RDI2M0FCQUExQTMzQTZBMEVBOTIxQTAwQzBEOEUzOTkyNkQ5RENFRTk5MDBBNkZFRTlEMEYwMkU2IiwidG9rZW4iOiI5NDg5MDY0NDQxODUxMjgwMzA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2564</invoiceNumber>
+      <description>Happivize - Order 2564</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>218</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>219</itemId>
+        <name>Project Gratitude + Private ...</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>220</itemId>
+        <name>Music</name>
+        <quantity>1</quantity>
+        <unitPrice>2.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>abff@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>sadasdas</lastName>
+      <address>fghfg fghfgh</address>
+      <city>fghfgh</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+      <phoneNumber>12345678798</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>sadasdas</lastName>
+      <address>fghfg fghfgh</address>
+      <city>fghfgh</city>
+      <state>AR</state>
+      <zip>123344</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.20812s
+
+03-09-2017 @ 13:00:44 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 859
+    [date] => Thu, 09 Mar 2017 13:00:44 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2564</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>66397C5BB9D78B6BC9CD7A8F20410700</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-09-2017 @ 13:00:44 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-09-2017 @ 15:47:58 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2572</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>494.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUzMzY4N0M1NzgxMThBMjVFRDI3Q0FGNzdCMzU1MjI1MEFDMkM4QjhGNjMwOUY2RTlFMzE2QzJBM0Q4QkUwMjdFQzFFREI0QTk1ODcxMkJBNTkyMEU0OTYwNjYxQzdBRUFBIiwidG9rZW4iOiI5NDg5MDc0NDc2ODAzMzA1ODA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2572</invoiceNumber>
+      <description>Happivize - Order 2572</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>221</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>222</itemId>
+        <name>Project Gratitude</name>
+        <quantity>1</quantity>
+        <unitPrice>197.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>158</id>
+      <email>chhabra.odesk.mca@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>tester</firstName>
+      <lastName>tester</lastName>
+      <company>softweaver</company>
+      <address>123 model town</address>
+      <city>mohali</city>
+      <state>PB</state>
+      <zip>144102</zip>
+      <country>IND</country>
+      <phoneNumber>1234567895</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>tester</firstName>
+      <lastName>tester</lastName>
+      <company>softweaver</company>
+      <address>123 model town</address>
+      <city>mohali</city>
+      <state>PB</state>
+      <zip>144102</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>14.195.233.240</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.01826s
+
+03-09-2017 @ 15:47:58 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 859
+    [date] => Thu, 09 Mar 2017 15:47:58 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2572</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>E20ADD4293D42D243F7499D3B0CAD784</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-09-2017 @ 15:47:59 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-09-2017 @ 15:57:09 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2573</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyRDlCNzNFNUVBMTFENUVFRjI4MkJEOUYzMjA3QkIyRDJDQTVFMThCMTgwMTlBN0Y2NkU1RDU4MUEwREQ2OEM4QzBERUEyQzI2NjQzODE0NTQyOTI4M0ZBQTIxRTA4NUVEIiwidG9rZW4iOiI5NDg5MDc1MDI3MzAzMzA2NDA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2573</invoiceNumber>
+      <description>Happivize - Order 2573</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>223</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>eleanorrgb+testpopu1056@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>A</firstName>
+      <lastName>as</lastName>
+      <address>asdf asdf</address>
+      <city>asdf</city>
+      <state>AZ</state>
+      <zip>12134</zip>
+      <country>USA</country>
+      <phoneNumber>1231231234</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>A</firstName>
+      <lastName>as</lastName>
+      <address>asdf asdf</address>
+      <city>asdf</city>
+      <state>AZ</state>
+      <zip>12134</zip>
+      <country>USA</country>
+    </shipTo>
+    <customerIP>67.149.226.99</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.39912s
+
+03-09-2017 @ 15:57:09 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 859
+    [date] => Thu, 09 Mar 2017 15:57:09 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2573</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>DE86DCEB8C497D422088052886C9FA85</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX1111</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-09-2017 @ 15:57:10 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-10-2017 @ 06:08:12 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2581</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>197.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyQTc3MDI4QzFDQUVDMUUwMEMwMEFFODQwQkZBMjM4QjNBQzU2MEExMDE0QTJBQUFDQjM2Qjc3RUVBNEM0NzdGMkZCRUY0NTY2NzhCODNBN0M3NEMyOEQ1RDAxRkY3QUVGIiwidG9rZW4iOiI5NDg5MTI2MDkwODE0MDI1MTA0NjA0IiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2581</invoiceNumber>
+      <description>Happivize - Order 2581</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>226</itemId>
+        <name>Project Gratitude</name>
+        <quantity>1</quantity>
+        <unitPrice>197.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>0</id>
+      <email>vishal.softweaver@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>rahul</firstName>
+      <lastName>singh</lastName>
+      <company>soft</company>
+      <address>tesrtin abcs</address>
+      <city>fgh</city>
+      <state>PB</state>
+      <zip>144211</zip>
+      <country>IND</country>
+      <phoneNumber>998877665544</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>rahul</firstName>
+      <lastName>singh</lastName>
+      <company>soft</company>
+      <address>tesrtin abcs</address>
+      <city>fgh</city>
+      <state>PB</state>
+      <zip>144211</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.95456s
+
+03-10-2017 @ 06:08:12 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 859
+    [date] => Fri, 10 Mar 2017 06:08:12 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2581</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>000000</authCode>
+    <avsResultCode>P</avsResultCode>
+    <cvvResultCode/>
+    <cavvResultCode/>
+    <transId>0</transId>
+    <refTransID/>
+    <transHash>5AE2CF7B4EE897E02F41740859CB0196</transHash>
+    <testRequest>1</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 06:08:13 - Test request detected -- please disable test mode in your Authorize.Net control panel and use a separate Authorize.Net test account for testing.
+03-10-2017 @ 10:59:31 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2591</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUzRTY2NjkxRjc3Rjk0RDIxNEQ0QUEzNDhFQjVCNTg4MUExMDcxNzlGQTY4Qzk1N0FEQ0Q3QjZBMkExNUEwNjc3RUZCRDQxREMxRTU1MzkxRTUxRDlEMjIwNjE1MDQ0REM2IiwidG9rZW4iOiI5NDg5MTQzNTY5NjIxMzc1NTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2591</invoiceNumber>
+      <description>Happivize - Order 2591</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>227</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>227</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>Rahul</firstName>
+      <lastName>Singh</lastName>
+      <company>Soft</company>
+      <address>street no 9 DLF</address>
+      <city>Mohali</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>Rahul</firstName>
+      <lastName>Singh</lastName>
+      <company>Soft</company>
+      <address>street no 9 DLF</address>
+      <city>Mohali</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.30502s
+
+03-10-2017 @ 10:59:31 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 10:59:31 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2591</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>Q15CPI</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019520623</transId>
+    <refTransID/>
+    <transHash>8CA18A094A668D56FF0C7C858D8F772F</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 12:20:34 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2592</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUzQjAxOUNGQzQ0NUUyNTc4REYzNjFERjhDMEVCRjIzMEYzREU0NkEzREJENUY4MzUyQzFBNzJFQjExMjZENjc2RjE1RUQ4NzdFRENCNDkxMzZFRUE4MzdCNkVCODhCRDY1IiwidG9rZW4iOiI5NDg5MTQ4NDMyNzgyMzgxMTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2592</invoiceNumber>
+      <description>Happivize - Order 2592</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>228</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>228</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>rahul</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>rahul</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.19756s
+
+03-10-2017 @ 12:20:34 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 12:20:34 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2592</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>W5DBC8</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019525012</transId>
+    <refTransID/>
+    <transHash>411A90307301C78B396E0EC0723B3EBD</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 12:31:00 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2593</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyODEwMEE0QjE1QUZEMDM2MkQ0MjAxQTUzMzBERkQyNzIxQjYzQzQ3RDM0NUZEMjZEMUYyNTQ3NTA1REFGODQxREUwRjkyRjhFMjFFOTg3RjIzODlBNzhFQjVGMUEwRTIwIiwidG9rZW4iOiI5NDg5MTQ5MDU3NTg0Mzg0NTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2593</invoiceNumber>
+      <description>Happivize - Order 2593</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>229</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>229</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>sadasdas</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>sadasdas</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.05604s
+
+03-10-2017 @ 12:31:00 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 12:31:00 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2593</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>YXDPPG</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019525332</transId>
+    <refTransID/>
+    <transHash>4B438943AF1F1B92B5885E6C159C0C72</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 12:34:09 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2594</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyQ0E0Qzg4RkEyRTMxRTlBM0M4QjY4NzBCMzUwQUEyNDU0MkIzNTE4RDhGRUI3OTYwMEExRTA0NzQ5OEVFMDE1RDI3REFGRDYxQUZFQjgyODQxNDcxQTU4MkU2RkZDRDIwIiwidG9rZW4iOiI5NDg5MTQ5MjQ2ODE3Mzg1NzA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2594</invoiceNumber>
+      <description>Happivize - Order 2594</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>230</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>230</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>166204</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.9971s
+
+03-10-2017 @ 12:34:09 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 12:34:09 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2594</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>VDG693</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019525496</transId>
+    <refTransID/>
+    <transHash>1499DB3DF76F0D12EE79D4C612557CB0</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 12:43:14 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2595</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyOTkyODBFOUMwOUE3RjM1NjQ4OUExNjFCRkQxRkM0RTQ1NTZEREQ0MDU5Mzc2MjZBRUQyMzZCMTdENjczODIxRTcxNDg4MzBDQUY5Rjk1NDk2MjIwQ0NENDM2RkZFMEVDIiwidG9rZW4iOiI5NDg5MTQ5NzkzMDYwMzg4ODA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2595</invoiceNumber>
+      <description>Happivize - Order 2595</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>231</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>231</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>155345</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>155345</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.97534s
+
+03-10-2017 @ 12:43:14 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 12:43:14 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2595</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>DAJOTF</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019525845</transId>
+    <refTransID/>
+    <transHash>CA56DD09F6FF6C293F9124ED0560740F</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-10-2017 @ 12:44:01 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2596</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyMTRBRjU3Rjg0QURFQjVENUIwOEM3MjlBQTY3RUJFRkIxOEQwMUI3OEIwOEQ2MjYwMEY5MzFBNzU1REIzMDI3MDZFREQ3MEEwRDUyMTZBOUE5NTJGM0M2MzMwRjc1REY2IiwidG9rZW4iOiI5NDg5MTQ5ODM5NDQxMzg5MTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2596</invoiceNumber>
+      <description>Happivize - Order 2596</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>232</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>231</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>155345</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>asdasd</firstName>
+      <lastName>dsfsdf</lastName>
+      <company>new test</company>
+      <address>uuu left</address>
+      <city>una</city>
+      <state>PB</state>
+      <zip>155345</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.89205s
+
+03-10-2017 @ 12:44:01 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Fri, 10 Mar 2017 12:44:01 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2596</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>IIXHC7</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019525862</transId>
+    <refTransID/>
+    <transHash>E1B4A56B5C4B02118374669A88F30167</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 07:30:27 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1810950386</customerProfileId>
+</getCustomerProfileRequest>
+duration: 0.49016s
+
+03-14-2017 @ 07:30:27 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 1181
+    [date] => Tue, 14 Mar 2017 07:30:27 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<getCustomerProfileResponse>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <profile>
+    <merchantCustomerId>232</merchantCustomerId>
+    <email>chh_rahul@live.com</email>
+    <customerProfileId>1810950386</customerProfileId>
+    <paymentProfiles>
+      <billTo>
+        <firstName>sdfsdf</firstName>
+        <lastName>dsfsdf</lastName>
+        <address>uuu fghfgh</address>
+        <city>fghfgh</city>
+        <state>AP</state>
+        <zip>1211</zip>
+        <country>IND</country>
+        <phoneNumber>9898898988</phoneNumber>
+      </billTo>
+      <customerPaymentProfileId>1805650759</customerPaymentProfileId>
+      <payment>
+        <creditCard>
+          <cardNumber>XXXX0027</cardNumber>
+          <expirationDate>XXXX</expirationDate>
+          <cardType>Visa</cardType>
+        </creditCard>
+      </payment>
+    </paymentProfiles>
+    <shipToList>
+      <firstName>sdfsdf</firstName>
+      <lastName>dsfsdf</lastName>
+      <address>uuu fghfgh</address>
+      <city>fghfgh</city>
+      <state>AP</state>
+      <zip>1211</zip>
+      <country>IND</country>
+      <customerAddressId>1809886794</customerAddressId>
+    </shipToList>
+  </profile>
+</getCustomerProfileResponse>
+
+03-14-2017 @ 07:30:46 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1810950386</customerProfileId>
+  <customerPaymentProfileId>1805650759</customerPaymentProfileId>
+</getCustomerPaymentProfileRequest>
+duration: 0.64415s
+
+03-14-2017 @ 07:30:46 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 865
+    [date] => Tue, 14 Mar 2017 07:30:46 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<getCustomerPaymentProfileResponse>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <paymentProfile>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>dsfsdf</lastName>
+      <address>uuu fghfgh</address>
+      <city>fghfgh</city>
+      <state>AP</state>
+      <zip>1211</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <customerProfileId>1810950386</customerProfileId>
+    <customerPaymentProfileId>1805650759</customerPaymentProfileId>
+    <payment>
+      <creditCard>
+        <cardNumber>XXXX0027</cardNumber>
+        <expirationDate>XXXX</expirationDate>
+        <cardType>Visa</cardType>
+      </creditCard>
+    </payment>
+  </paymentProfile>
+</getCustomerPaymentProfileResponse>
+
+03-14-2017 @ 07:30:47 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<updateCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2715</refId>
+  <customerProfileId>1810950386</customerProfileId>
+  <paymentProfile>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>dsfsdf</lastName>
+      <address>uuu fghfgh</address>
+      <city>fghfgh</city>
+      <state>AP</state>
+      <zip>1211</zip>
+      <country>IND</country>
+      <phoneNumber>9898898988</phoneNumber>
+    </billTo>
+    <payment>
+      <creditCard>
+        <cardNumber>XXXX0027</cardNumber>
+        <expirationDate>XXXX</expirationDate>
+      </creditCard>
+    </payment>
+    <customerPaymentProfileId>1805650759</customerPaymentProfileId>
+  </paymentProfile>
+  <validationMode>none</validationMode>
+</updateCustomerPaymentProfileRequest>
+duration: 0.62201s
+
+03-14-2017 @ 07:30:47 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 394
+    [date] => Tue, 14 Mar 2017 07:30:47 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<updateCustomerPaymentProfileResponse>
+  <refId>2715</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+</updateCustomerPaymentProfileResponse>
+
+03-14-2017 @ 07:30:47 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2715</refId>
+  <transaction>
+    <profileTransAuthCapture>
+      <amount>297.00</amount>
+      <lineItems>
+        <itemId>247</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItems>
+      <customerProfileId>1810950386</customerProfileId>
+      <customerPaymentProfileId>1805650759</customerPaymentProfileId>
+      <customerShippingAddressId>1809886794</customerShippingAddressId>
+      <order>
+        <invoiceNumber>2715</invoiceNumber>
+        <description>Happivize - Order 2715</description>
+      </order>
+    </profileTransAuthCapture>
+  </transaction>
+  <extraOptions>x_solution_id=A1000065&amp;x_customer_ip=112.196.70.10&amp;x_currency_code=USD&amp;x_duplicate_window=0&amp;x_delim_char=%7C&amp;x_encap_char=%3A</extraOptions>
+</createCustomerProfileTransactionRequest>
+duration: 0.69168s
+
+03-14-2017 @ 07:30:47 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 907
+    [date] => Tue, 14 Mar 2017 07:30:47 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createCustomerProfileTransactionResponse>
+  <refId>2715</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <directResponse>:1:|:1:|:1:|:This transaction has been approved.:|:Q46XOH:|:Y:|:60019731151:|:2715:|:Happivize - Order 2715:|:297.00:|:CC:|:auth_capture:|:232:|:sdfsdf:|:dsfsdf:|::|:uuu fghfgh:|:fghfgh:|:AP:|:1211:|:IND:|:9898898988:|::|:chh_rahul@live.com:|:sdfsdf:|:dsfsdf:|::|:uuu fghfgh:|:fghfgh:|:AP:|:1211:|:IND:|::|::|::|::|::|:AF6503B5BC5C8EEF67F5378806DA4A0A:|:P:|:2:|::|::|::|::|::|::|::|::|::|::|:XXXX0027:|:Visa:|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|::|:1809886794:|::</directResponse>
+</createCustomerProfileTransactionResponse>
+
+03-14-2017 @ 07:58:27 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2717</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyNkVCNTY5ODI5NTg5Qzk3MzkyNzU3QTc2N0FBNDlFNTZBQUQxMTQ5Njg1NjJCNjNFNUFFQjFDOTE1QUUyMjc4OEU3QUYyNzA1QzUwREU1RjU1NTU3RkZDQkVBODBFQzhCIiwidG9rZW4iOiI5NDg5NDc4MzA1MDc3NTcxODA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2717</invoiceNumber>
+      <description>Happivize - Order 2717</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>249</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>235</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.55273s
+
+03-14-2017 @ 07:58:27 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 07:58:27 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2717</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>MV9CS3</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019732364</transId>
+    <refTransID/>
+    <transHash>AB3C21E2A77EF2C0F3E8D323956242EC</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 08:00:30 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2718</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyODcxMjEzMkJFMUYzNDk5QkQ2QTY2MDhFOUUzRDIwOUU1NENCRDU4OEVFN0FGNzA3NTUzNjU3Rjc2NjI0Mzk1NjUzNTcwNDBDMjA2Mjk3Q0NFNzczNzZEQzBENzE2NEYwIiwidG9rZW4iOiI5NDg5NDc4NDI4MDg1MzI0NDA0NjA0IiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2718</invoiceNumber>
+      <description>Happivize - Order 2718</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>250</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>235</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.2537s
+
+03-14-2017 @ 08:00:30 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 08:00:30 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2718</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>QTJ5NA</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019732442</transId>
+    <refTransID/>
+    <transHash>FA5076BD8D21D2918E8C7CE079BBE273</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 08:32:17 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2720</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyMTFFREJERkIxRjMyNUZBOTc4QjIyNDdERjg4NTNEMDE4OTMzMDJFNUE4MUQwQjAzODhCODM5MjBEMUEyNDU5QTVBMjY0QUI5QTRDRDAxMkUwQzA4NUU1MjgxRjA0MkMxIiwidG9rZW4iOiI5NDg5NDgwMzM0ODIxMzI0ODA0NjA0IiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2720</invoiceNumber>
+      <description>Happivize - Order 2720</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>251</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>235</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.00497s
+
+03-14-2017 @ 08:32:17 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 08:32:17 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2720</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>IO7I1Y</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019735792</transId>
+    <refTransID/>
+    <transHash>E29F0CBF010D23A8FEC6D464FFB2D247</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 08:35:42 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2721</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyRUY3ODY5RTY5MERDODVDOENCMERCOThDQkJGMDJERjU4MDA5QUM3RUM4Q0I3ODNFMkNFODFCQzYwRTdBOTk5MUYzRThFODM3QzFFM0E3NzNCNjQ1NjE2Q0EwMENBREY0IiwidG9rZW4iOiI5NDg5NDgwNTQxMDc3NTcyNTA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2721</invoiceNumber>
+      <description>Happivize - Order 2721</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>252</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>235</id>
+      <email>chh_rahul@live.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>Singh</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdfs dfsdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AR</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.69079s
+
+03-14-2017 @ 08:35:42 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 08:35:42 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2721</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>L5ATMM</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019738680</transId>
+    <refTransID/>
+    <transHash>03A256202C47E4FCCA6D5B99A8C5F040</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 08:38:45 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2722</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyNEEwMzY3QzJCMDMwMzEzNzFEN0U3MUUyMjBDMTE5OTk3Qjg5NDY0NUJDOUE5MzBFMTYzQzA5ODBGRTJFRDNCQzJFNkVDMTY5NDdBNzNCNUQyRTNEQTdBMUZGRTBEQTQ1IiwidG9rZW4iOiI5NDg5NDgwNzIzNjkwMzI1MTA0NjA0IiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2722</invoiceNumber>
+      <description>Happivize - Order 2722</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>253</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>236</id>
+      <email>fsdf@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>fsdfsdf</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AP</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>fsdfsdf</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AP</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 1.09689s
+
+03-14-2017 @ 08:38:45 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 08:38:45 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2722</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>QZMVMZ</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019741430</transId>
+    <refTransID/>
+    <transHash>01064952F10DA456FFCA27394EC4FC49</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+
+03-14-2017 @ 08:41:57 - Request
+method: POST
+uri: https://apitest.authorize.net/xml/v1/request.api
+user-agent: WooCommerce-Authorize.Net-CIM-Gateway/2.5.1 (WooCommerce/2.5.5; WordPress/4.7.3)
+headers: Array
+(
+    [content-type] => application/xml
+    [accept] => application/xml
+)
+body: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>********</name>
+    <transactionKey>****************</transactionKey>
+  </merchantAuthentication>
+  <refId>2723</refId>
+  <transactionRequest>
+    <transactionType>authCaptureTransaction</transactionType>
+    <amount>297.00</amount>
+    <currencyCode>USD</currencyCode>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyREU0NEE0NEIwNTY5RUYxNjhFOUFENTE4MUM3QjVDMDlEMkU0MzRGQUI3MkIwRDA0NjhENTM1REJFMDY3NkEwMEQxRUExNEM0MkJCOTA4RkU5OEExNkFBQUE5M0M5RjlDIiwidG9rZW4iOiI5NDg5NDgwOTE2MTc0NTcyNzA0NjAzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+    <solution>
+      <id>A1000065</id>
+    </solution>
+    <order>
+      <invoiceNumber>2723</invoiceNumber>
+      <description>Happivize - Order 2723</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>254</itemId>
+        <name>Body BFF</name>
+        <quantity>1</quantity>
+        <unitPrice>297.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id>236</id>
+      <email>fsdf@gmail.com</email>
+    </customer>
+    <billTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>fsdfsdf</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AP</state>
+      <zip>123323</zip>
+      <country>IND</country>
+      <phoneNumber>1234567880</phoneNumber>
+    </billTo>
+    <shipTo>
+      <firstName>sdfsdf</firstName>
+      <lastName>fsdfsdf</lastName>
+      <company>sdfsdf</company>
+      <address>sdfsdf sdfsdf</address>
+      <city>sdfsdf</city>
+      <state>AP</state>
+      <zip>123323</zip>
+      <country>IND</country>
+    </shipTo>
+    <customerIP>112.196.70.10</customerIP>
+  </transactionRequest>
+</createTransactionRequest>
+duration: 0.98409s
+
+03-14-2017 @ 08:41:57 - Response
+code: 200
+message: OK
+headers: Array
+(
+    [cache-control] => private
+    [content-type] => application/xml; charset=utf-8
+    [server] => Microsoft-IIS/7.5
+    [access-control-allow-origin] => *
+    [access-control-allow-methods] => PUT,OPTIONS,POST,GET
+    [access-control-allow-headers] => x-requested-with,cache-control,content-type,origin,method,SOAPAction
+    [x-cnection] => close
+    [x-aspnet-version] => 4.0.30319
+    [x-powered-by] => ASP.NET
+    [content-length] => 900
+    [date] => Tue, 14 Mar 2017 08:41:57 GMT
+)
+body: <?xml version="1.0" encoding="utf-8"?>
+<createTransactionResponse>
+  <refId>2723</refId>
+  <messages>
+    <resultCode>Ok</resultCode>
+    <message>
+      <code>I00001</code>
+      <text>Successful.</text>
+    </message>
+  </messages>
+  <transactionResponse>
+    <responseCode>1</responseCode>
+    <authCode>6BWG8N</authCode>
+    <avsResultCode>Y</avsResultCode>
+    <cvvResultCode>P</cvvResultCode>
+    <cavvResultCode>2</cavvResultCode>
+    <transId>60019744954</transId>
+    <refTransID/>
+    <transHash>05C869BD451EB7B8F39719A02F80B824</transHash>
+    <testRequest>0</testRequest>
+    <accountNumber>XXXX0027</accountNumber>
+    <accountType>Visa</accountType>
+    <messages>
+      <message>
+        <code>1</code>
+        <description>This transaction has been approved.</description>
+      </message>
+    </messages>
+    <transHashSha2/>
+  </transactionResponse>
+</createTransactionResponse>
+

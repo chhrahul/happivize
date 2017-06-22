@@ -1,0 +1,67 @@
+.popupally-pro-outer-preview-lquydg-{{num}}{
+width:{{lquydg-width}}px;
+height:{{lquydg-height}}px;
+}
+.popupally-pro-outer-960-preview-lquydg-{{num}}{
+width:{{lquydg-width-960}}px;
+height:{{lquydg-height-960}}px;
+}
+.popupally-pro-outer-640-preview-lquydg-{{num}}{
+width:{{lquydg-width-640}}px;
+height:{{lquydg-height-640}}px;
+}
+.popupally-pro-outer-preview-lquydg-{{num}},
+.popupally-pro-outer-960-preview-lquydg-{{num}},
+.popupally-pro-outer-640-preview-lquydg-{{num}}{
+background-color:{{lquydg-background-color}};
+background-image:{{lquydg-background-image}};
+background-size:cover;
+background-repeat:no-repeat;
+}
+.popupally-pro-outer-preview-lquydg-{{num}},
+.popupally-pro-outer-960-preview-lquydg-{{num}},
+.popupally-pro-outer-640-preview-lquydg-{{num}} {
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+margin:10px 10px;
+}
+.popupally-pro-inner-lquydg-{{num}}{
+position:relative;
+overflow:visible;
+width:auto;
+height:auto;
+padding:0;
+margin:0;
+text-align:center;
+}
+.popupally-pro-inner-lquydg-{{num}} {
+display:block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+position:relative;
+line-height:18px;
+}
+.popupally-pro-inner-lquydg-{{num}} .image-1-pro-lquydg{
+position:relative;
+display:block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:50%;
+margin:{{lquydg-image-1-margin-top}}px auto {{lquydg-image-1-margin-bottom}}px auto;
+background-image:{{lquydg-image-1}};
+width:{{lquydg-image-1-width}}px;
+height:{{lquydg-image-1-height}}px;
+}
+.popupally-pro-outer-960-preview-lquydg-{{num}} .popupally-pro-inner-lquydg-{{num}} .image-1-pro-lquydg {
+margin:{{lquydg-image-1-960-margin-top}}px auto {{lquydg-image-1-960-margin-bottom}}px auto;
+width:{{lquydg-image-1-960-width}}px;
+height:{{lquydg-image-1-960-height}}px;
+}
+.popupally-pro-outer-640-preview-lquydg-{{num}} .popupally-pro-inner-lquydg-{{num}} .image-1-pro-lquydg {
+margin:{{lquydg-image-1-640-margin-top}}px auto {{lquydg-image-1-640-margin-bottom}}px auto;
+width:{{lquydg-image-1-640-width}}px;
+height:{{lquydg-image-1-640-height}}px;
+}

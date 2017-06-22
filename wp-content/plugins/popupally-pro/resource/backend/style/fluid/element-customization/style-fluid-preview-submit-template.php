@@ -1,0 +1,1 @@
+<input class="popupally-preview-{{id}}-{{uid}}-{{element-id}} popupally-preview-element no-click-through" type="submit" value="{{text}}" id="popupally-preview-{{id}}-{{uid}}-{{element-id}}-{{responsive-id}}" style="display:block;position:absolute;{{element-css}}" />

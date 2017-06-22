@@ -1,0 +1,1 @@
+<input id="popupally-fluid-{{id}}-{{uid}}-{{element-id}}" {{default-checked}} type="checkbox" name="{{form-field}}" {{is-required}} value="{{checkbox-value}}" class="popupally-fluid-content-element" />

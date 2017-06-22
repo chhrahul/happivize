@@ -1,0 +1,9 @@
+This plugin was designed with seamless template overriding in mind.  The following pseudo-hierarchy is employed:
+single-dnc-wc-offer
+	header-dnc-wc-offer
+	content-dnc-wc-offer
+	footer-dnc-wc-offer
+
+If the relevant file is located in the theme (child or parent), it is used.  Else, the one from the plugin is used.  Additionally, the single_template filter is used to allow the injection of the above single-dnc-wc-offer template.  It has higher priority than single, if the post-type is dnc-wc-offer.
+
+There is no default archive template provided, as it was requested that there be no automatic archive listing.

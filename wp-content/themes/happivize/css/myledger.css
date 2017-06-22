@@ -1,0 +1,126 @@
+form#setfilters {
+    width: 100%;
+    overflow: hidden;
+}
+form#setfilters > div {
+    width: 20%;
+    float: left;
+    margin: 0 1% 1% 0%;
+    overflow: hidden;
+}
+.filters label.description {
+    display: none;
+}
+form#setfilters > div input[type="text"] {
+    width: 84%;
+    padding: 0px;
+    margin: 0px 0px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+    padding: 3px 6px 3px;
+}
+.table-responsive>.table {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+img.ui-datepicker-trigger {
+    width: 13%;
+    margin: 0px 2px;
+}
+form#setfilters > div.submit {    
+    position: relative;
+}
+.affiliate-stats.summary .filters {
+    margin: 0% 0 1%;
+}
+.affiliate-stats.summary table.wp-list-table {
+       width: 55% !important;
+}
+.table-responsive {
+    margin-bottom: 5px;
+}
+
+.total_count {
+    width: 100%;
+    font-size: 14px;
+}
+.total_count > p {
+    text-align: right;
+    font-weight: bold;
+}
+.get_total {
+    width: 80%;
+    float: left;
+    text-align: left;
+    font-weight: 600;
+}
+
+form#setfilters > div.submit {
+    width: 30%;
+
+
+}
+form#setfilters > div.submit input {
+    margin-right: 4%;
+    font-size: 15px;
+    padding: 3px 6px 3px;
+    border-radius: 4px;
+}
+table.tabular td.thead,table.tabular th {
+    padding-top: 9px;
+    vertical-align: middle;
+    background: #eee;
+}
+p.heading_tables {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #ff9933;
+}
+
+.closed_payments, .pending_payments, .rejected_payments{
+    margin-top: 4%;
+}
+
+.summary_of_result {
+    width: 75%;
+    /* border: 1px solid; */
+    float: right;
+    margin: 4% 0 8%;
+    text-align: right;
+}
+.summary_of_result .summary_head {
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    width: 80%;
+    float: right;
+}
+.summary_of_result .total_results table.wp-list-table.widefat.fixed {
+    width: 81% !important;
+    float: right;
+}
+.accepted_payments {
+    margin-top: 2%;
+}
+td.total {
+    font-weight: bold;
+    color: #ff3366;
+}
+
+.affiliates_total_earning {
+    float: right;
+    width: 100%;
+    margin: 0 0px 5%;
+}
+.affiliates_total_earning table.affiliates-earnings {
+    float: right;
+    width: 44%;
+}
+
+input:focus {  outline :none !important;}
+
+
+.closed_payments table td{
+    background-color:yellow;
+}

@@ -1,0 +1,10 @@
+html { margin-top: {{oeudhw-height}}px !important; }
+* html body { margin-top: {{oeudhw-height}}px !important; }
+@media (max-width: 960px) {
+	html { margin-top: {{oeudhw-height-960}}px !important; }
+	* html body { margin-top: {{oeudhw-height-960}}px !important; }
+}
+@media (max-width: 640px) {
+	html { margin-top: {{oeudhw-height-640}}px !important; }
+	* html body { margin-top: {{oeudhw-height-640}}px !important; }
+}

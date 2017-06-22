@@ -1,0 +1,10 @@
+html { margin-top: {{lquydg-height}}px !important; }
+* html body { margin-top: {{lquydg-height}}px !important; }
+@media (max-width: 960px) {
+	html { margin-top: {{lquydg-height-960}}px !important; }
+	* html body { margin-top: {{lquydg-height-960}}px !important; }
+}
+@media (max-width: 640px) {
+	html { margin-top: {{lquydg-height-640}}px !important; }
+	* html body { margin-top: {{lquydg-height-640}}px !important; }
+}

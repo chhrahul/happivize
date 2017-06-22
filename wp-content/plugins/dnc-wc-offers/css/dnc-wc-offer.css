@@ -1,0 +1,838 @@
+/*
+Copyright (c) 2017 Designs and Codes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+*/
+
+/**
+ * The styling for dnc-wc-offer singles & archives
+ */
+html,
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+@media( min-width: 768px ){
+	html,
+	body {
+		font-size: 18px;
+	}
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
+.as-heading,
+h1,
+h2,
+header,
+footer {
+	margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 3.166rem;
+}
+
+h2 {
+	font-size: 2.33333333rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 1.66666667rem;
+}
+
+img {
+	display: block;
+	border-radius: 8px;
+	max-width: 100%;
+	height: auto;
+}
+
+dd,
+dt {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.as-line,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+dd + dt {
+	margin-top: 1rem;
+}
+
+.as-block,
+dl,
+figure,
+h3,
+h4 {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.as-heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer {
+	margin-top: 2rem;
+	text-align: center;
+	font-weight: 500;
+}
+
+ol,
+ul {
+	padding-left: 40px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul > li {
+	position: relative;
+}
+
+ul > li:before {
+	content: '\f138'; /* fa-chevron-right */
+	position: absolute;
+	top: 0;
+	left: -20px;
+	margin-left: -0.75em;
+	width: 1.5em;
+	color: #f36;
+	font-family: FontAwesome;
+	text-align: center;
+}
+
+:first-child:first-child {
+	margin-top: 0;
+}
+
+:last-child:last-child {
+	margin-bottom: 0;
+}
+
+.row,
+.column {
+	display: flex;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.row {
+	flex-flow: row wrap;
+}
+
+.column {
+	flex-flow: column nowrap;
+}
+
+.row > *,
+.column > * {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.row.items-start {
+	align-items: start !important;
+}
+
+.row.items-end {
+	align-items: end !important;
+}
+
+.row.items-center {
+	align-items: center !important;
+}
+
+.row.items-stretch {
+	align-items: stretch !important;
+}
+
+.row.justify-start {
+	justify-content: start !important;
+}
+
+.row.justify-end {
+	justify-content: end !important;
+}
+
+.row.justify-center {
+	justify-content: center !important;
+}
+
+.row.justify-between {
+	justify-content: space-between !important;
+}
+
+.row.justify-around {
+	justify-content: space-around !important;
+}
+
+.self-start {
+	align-self: start !important;
+}
+
+.self-end {
+	align-self: end !important;
+}
+
+.self-center {
+	align-self: center !important;
+}
+
+.self-stretch {
+	align-self: stretch !important;
+}
+
+.dnc-wc-offers-site-main {
+	flex: 1 1 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.alignnone {
+	float: none;
+	display: block;
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+.aligncenter {
+	float: none;
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.alignleft {
+	float: left;
+	display: block;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.alignleft {
+	float: right;
+	display: block;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+@media( min-width: 768px ){
+	.alignnone-sm {
+		float: none;
+		display: block;
+		margin-left: 0 !important;
+		margin-right: auto !important;
+	}
+
+	.aligncenter-sm {
+		float: none;
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.alignleft-sm {
+		float: left;
+		display: block;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.alignleft-sm {
+		float: right;
+		display: block;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+.dnc-wc-offer {
+}
+
+.dnc-wc-offer-heading-tagline {
+	color: #f36;
+}
+
+.dnc-wc-offer-heading-heading {
+	color: #009f97;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.dnc-wc-offer-heading-subheading {
+	color: #f93;
+}
+
+.dnc-wc-offer-banner {
+	
+}
+
+.dnc-wc-offer-banner-img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dnc-wc-offer-content,
+.dnc-wc-offer-item,
+.dnc-wc-offer-section {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.dnc-wc-offer-finalize,
+.dnc-wc-offer-item,
+.dnc-wc-offer-section-narrow {
+	max-width: 970px;
+}
+
+.container .container,
+.dnc-wc-offer-finalize .container,
+.dnc-wc-offer-item .container,
+.dnc-wc-offer-section-narrow .container {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+.dnc-wc-offer-section .container {
+	max-width: 100%;
+}
+
+.dnc-wc-offer-content:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.dnc-wc-offer-section-full {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ol.dnc-wc-offers-list-stars,
+ul.dnc-wc-offers-list-stars {
+	list-style: none;
+}
+
+dl.dnc-wc-offers-list-stars,
+ol.dnc-wc-offers-list-stars,
+ul.dnc-wc-offers-list-stars {
+	padding-left: 50px;
+}
+
+dl.dnc-wc-offers-list-stars > dt,
+ol.dnc-wc-offers-list-stars > li,
+ul.dnc-wc-offers-list-stars > li {
+	position: relative;
+}
+
+dl.dnc-wc-offers-list-stars > dt {
+	color: #f36;
+	font-weight: inherit;
+	font-size: 1.33333333rem;
+}
+
+dl.dnc-wc-offers-list-stars > dt:before,
+ol.dnc-wc-offers-list-stars > li:before,
+ul.dnc-wc-offers-list-stars > li:before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	top: 0.75em;
+	margin-left: -17px;
+	margin-top: -17px;
+	width: 34px;
+	height: 34px;
+	background-image: url( '../images/star.png' );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ol.dnc-wc-offers-list-dashes,
+ul.dnc-wc-offers-list-dashes {
+	list-style: none;
+}
+
+dl.dnc-wc-offers-list-dashes,
+ol.dnc-wc-offers-list-dashes,
+ul.dnc-wc-offers-list-dashes {
+	padding-left: 40px;
+}
+
+dl.dnc-wc-offers-list-dashes > dt,
+ol.dnc-wc-offers-list-dashes > li,
+ul.dnc-wc-offers-list-dashes > li {
+	position: relative;
+	margin: 0;
+}
+
+dl.dnc-wc-offers-list-dashes > dt:before,
+ol.dnc-wc-offers-list-dashes > li:before,
+ul.dnc-wc-offers-list-dashes > li:before {
+	content: '\f068'; /* fa-minus */
+	position: absolute;
+	left: -20px;
+	top: 0;
+	margin-left: -0.75em;
+	width: 1.5em;
+	color: inherit;
+	font-family: FontAwesome;
+	text-align: center;
+}
+
+.dnc-wc-offer-notice {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 560px;
+	color: #ff3366;
+	font-size: 0.86rem;
+	font-style: italic;
+	font-weight: 400;
+	text-align: left;
+}
+
+.dnc-wc-offer-callout {
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items:center;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	padding: 1rem 15px;
+	max-width: 360px;
+}
+
+.dnc-wc-offer-callout-fancy {
+	display: block;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	max-width: 320px;
+}
+
+.dnc-wc-offer-callout-fancy .dnc-wc-offer-callout-basin {
+	position: relative;
+	padding-bottom: 62.5%;
+	background-image: url( '../images/bucket-bkgrd.png' );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dnc-wc-offer-callout-fancy .dnc-wc-offer-callout-floater {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 15%;
+	bottom: 15%;
+	left: 15%;
+	right: 15%;
+}
+
+.dnc-wc-offer-callout-content {
+	text-align: center;
+}
+
+.dnc-wc-offer-callout-fancy .dnc-wc-offer-callout-content {
+	color: white;
+}
+
+.dnc-wc-offer-testimonial {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #ff7932;
+	border-radius: 8px;
+	padding: 1rem 2rem;
+	max-width: 800px;
+	font-style: italic;
+}
+
+.dnc-wc-offer-testimonial:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -60px;
+	margin-top: -25px;
+	margin-left: -10px;
+	width: 60px;
+	height: 50px;
+	background-image: url( '../images/quote.png' );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dnc-wc-offer-testimonial-quote {
+	border: none;
+	padding: 0;
+}
+
+/**
+ * Removed due to other developer being unable to use
+.dnc-wc-offer-testimonial-quote > p:first-child:before,
+.dnc-wc-offer-testimonial-quote > p:last-child:after {
+	content: '"';
+}
+ */
+
+.dnc-wc-offer-cite {
+	
+}
+
+.dnc-wc-offer-package-header {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-image: url( '../images/gradient-bkgrd.png' );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dnc-wc-offer-package-header-heading {
+	color: white;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-item:after {
+	content: '';
+	display: block;
+	margin-bottom: -2rem;
+}
+
+.dnc-wc-offer-item-item:after,
+.dnc-wc-offer-item.dnc-wc-offer-item-divider-item:after {
+	padding-bottom: 10.49504950%;
+	max-width: 100%;
+	background-image: url( '../images/curly-bracket.png' );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dnc-wc-offer-item-bonus:after,
+.dnc-wc-offer-item.dnc-wc-offer-item-divider-bonus:after {
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid #f7f7f7;
+	padding: 0;
+	max-width: 50%;
+	background: none;
+}
+
+.dnc-wc-offer-item.dnc-wc-offer-item-divider-none:after {
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+.dnc-wc-offer-item:last-child:after {
+	display: none !important;
+}
+
+.dnc-wc-offer-item-header {
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.dnc-wc-offer-item-header > .row {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.dnc-wc-offer-item-header-icon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dnc-wc-offer-item-header-index {
+	color: #f93;
+	font-size: 2.66666667rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-item-header-heading {
+	margin: 0;
+	color: #f36;
+	font-size: 3.33333333rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.dnc-wc-offer-item-header-format,
+.dnc-wc-offer-item-header-value {
+	margin: 0;
+	color: #999;
+	font-size: 1.33333333rem;
+	font-weight: 400;
+}
+
+.dnc-wc-offer-purchase-widgets {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.dnc-wc-offer-purchase-widgets:last-child {
+	padding-bottom: 2.5rem;
+}
+
+.dnc-wc-offer-purchase-widget {
+	padding: 0.5rem 25px;
+	max-width: 460px;
+}
+
+@media( min-width: 768px ){
+	.dnc-wc-offer-purchase-widget {
+		width: 50%;
+	}
+}
+
+.dnc-wc-offer-purchase-widget-header {
+	margin: 0 -10px;
+	padding: 10px;
+	background-color: #009f97;
+}
+
+.dnc-wc-offer-purchase-widget-header-heading {
+	color: white;
+	font-size: 3rem;
+	font-style: italic;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-purchase-widget-body-outer {
+	border: 2px solid #009f97;
+	border-top: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 0 10px 10px;
+	background-color: #f7f7f7;
+}
+
+.dnc-wc-offer-purchase-widget-body-inner {
+	border: 1px solid #8fd4d7;
+	border-top: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 0.5rem 15px;
+	text-align: center;
+}
+
+.dnc-wc-offer-purchase-widget-body-inner > * {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.dnc-wc-offer-purchase-widget-description,
+.dnc-wc-offer-purchase-widget-price-normal {
+	font-size: 1.33333333rem;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-purchase-widget-description {
+	
+}
+
+.dnc-wc-offer-purchase-widget-price-normal {
+	
+}
+
+.dnc-wc-offer-purchase-widget-price-discounted {
+	color: #f36;
+	font-size: 2rem;
+	text-shadow: 3px 1px 2px rgba( 51, 51, 51, 0.35 );
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-purchase-widget-price-discounted > .amount {
+	display: block;
+}
+
+.dnc-wc-offer-purchase-widget-buttons {
+	text-align: center;
+}
+
+.dnc-wc-offer-purchase-widget-button {
+	display: inline-block;
+	border-radius: 8px;
+	padding: 20px 30px;
+	background-color: #f36;
+	color: white !important;
+	font-size: 3rem;
+	line-height: 1;
+	font-style: italic;
+	font-weight: 400;
+	text-decoration: none !important;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-purchase-widget-button:active,
+.dnc-wc-offer-purchase-widget-button:hover {
+	background-color: #ff56a6;
+}
+
+.dnc-wc-offer-purchase-widget-button-add-to-cart {
+	
+}
+
+.dnc-wc-offer-purchase-widget-suffixes {
+	
+}
+
+.dnc-wc-offer-purchase-widget-suffix-payment-options {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dnc-wc-offer-finalize {
+	
+}
+
+.dnc-wc-offer-guarantee-row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.dnc-wc-offer-guarantee-heading {
+	color: #f93;
+	font-size: 2.33333333rem;
+	font-weight: 400;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.dnc-wc-offer-guarantee-icon {
+	
+}
+
+.dnc-wc-offers-site-footer {
+	margin: 0;
+	padding: 20px 15px;
+	background-color: #ff7932;
+	color: white;
+	font-size: 0.88888889rem;
+	font-weight: 400;
+	display: none;
+}
+
+.dnc-wc-offers-site-footer-copyright {
+	text-align: center;
+}
+
+@media( max-width: 767px ){
+	h1,
+	h2,
+	.dnc-wc-offer-package-header-heading,
+	.dnc-wc-offer-item-header-index,
+	.dnc-wc-offer-item-header-heading,
+	.dnc-wc-offer-purchase-widget-header-heading,
+	.dnc-wc-offer-purchase-widget-button,
+	.dnc-wc-offer-guarantee-heading {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		-ms-word-break: break-all;
+		word-break: break-word;
+	}
+
+	.row > * {
+		width: 100%;
+	}
+}
+
+.dnc-wc-offer-speaker {
+	float: none;
+}
+
+.dnc-wc-offer-speaker-mugshot {
+	margin: 0.5rem auto;
+}
+
+.dnc-wc-offer-speaker-mugshot-img {
+
+}
+
+.dnc-wc-offer-speaker-name,
+.dnc-wc-offer-speaker-title {
+	margin: 0 auto;
+}
+
+.dnc-wc-offer-speaker-name {
+	font-size: 1.2rem;
+}
+
+.dnc-wc-offer-speaker-title {
+	color: #666;
+}
+
+.dnc-wc-offer-speaker-bio {
+	
+}
+
+iframe .dnc-wc-offers-site-footer{
+    display: none !important; 
+}

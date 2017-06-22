@@ -1,0 +1,74 @@
+PopupAlly Pro Terms and Conditions
+Terms and Conditions
+
+By purchasing this PopupAlly Pro plugin (“Plugin”) from Nathalie Lussier Media, Inc. (“NLMI”), you hereby acknowledge and agree to the following terms (“Terms”), as a condition of your purchase and use of this Plugin.
+
+Plugin License.
+
+You are hereby granted a non-exclusive limited license to use the Plugin, in accordance with the terms of the Artistic 2.0 License (http://opensource.org/licenses/Artistic-2.0). You are not licensed to sell the Plugin or the source code of the Plugin. Any .PSD files, graphics, photos, layouts, CSS, and designs (“Plugin Graphics Files”) are distributed separately, and not licensed under the Artistic 2.0 License. 
+
+Plugin Graphics Files License.
+
+You are hereby granted a non-exclusive, limited, non-assignable, non-transferrable license to use the Plugin Graphics Files and the trademark PopupAlly Pro in conjunction with your own website(s).
+
+Support & Upgrades Access.
+
+When you purchase access to the Plugin, you receive access to Support & Upgrades, for as long as you:
+-	Are using the Plugin only on your own website(s).
+-	Have not sold the Plugin, the source code of the Plugin, or your access to Support & Upgrades, to any other person or entity.
+-	Have not modified the Plugin source code.
+
+Any modifications of the Plugin source code are not supported by NLMI, and nullify access to Support & Upgrades. Support is provided via emails, and NLMI will provide a commercially reasonable speed of response. Support is only provided for the features of the Plugin, and there is no guarantee that the Plugin will work with all themes/plugins that are installed on your website(s).
+Upgrades can be done automatically through the WordPress administrator panel, or a zip file can be downloaded at the plugin membership site.
+
+Download Procedure.
+
+The Plugin zip file can be downloaded at the Plugin membership site. You may not share your membership login or the Plugin zip file with others without express permission from NLMI.
+
+Ownership.
+
+All Plugins and Plugin Graphics Files are owned by NLMI. You may not claim ownership, intellectual property rights, or any other exclusive rights in the Plugin or Plugin Graphics Files, modified or unmodified. 
+
+Warranties.
+
+Plugins are guaranteed to operate on a clean installation of WordPress, on a properly configured web server. Plugins are not guaranteed to be compatible with any other plugins, themes, or configurations. Except as specifically provided in this paragraph, Plugins are provided “as is” without warranty of any kind, expressed or implied. NLMI specifically disclaims any warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+Damages. 
+
+To the extent allowed by law, under these Terms, NLMI will not be liable for indirect, special, incidental, punitive, exemplary or consequential damages, regardless of legal theory, whether or not it has been warned of such damages, and even if all other remedies would fail.
+
+Indemnification. 
+
+You agree to indemnify NLMI against all claims, suits, and damages arising out of your use of the Plugin or Plugin Graphics Files, or by your breach of these Terms. 
+
+No Waiver. 
+
+None of these Terms can be waived or modified except by an express agreement in writing signed by NLMI. 
+
+Entire Agreement. 
+
+These Terms constitutes the entire agreement between the parties and supersedes all prior or contemporaneous written or oral agreements between them or any of their affiliates, with respect to the subject matter contained herein. 
+
+Section Headings. 
+
+The section headings of these Terms are for convenience of reference only and shall not be deemed to alter or affect any provision hereof. 
+
+Assignment. 
+
+You may not assign these Terms, the Plugin Graphics Files License, or any rights you may have to Support & Upgrades to any other party without the NLMI’s written consent.
+
+Choice of Law and Venue.  
+
+These Terms shall be governed by, and construed in accordance with, the laws of the State of Texas.  Any and all disputes, controversies, claims, or differences arising out of, relating to, or having any connection with these Terms shall exclusively be brought and heard in the County of Denton, the State of Texas, and both parties consent to jurisdiction in the County of Denton, the State of Texas.
+
+Severability.  
+
+If any provision of these Terms are held to be invalid, illegal, or unenforceable, the validity, legality, or enforceability of the remainder of these Terms shall not in any way be affected or impaired.
+
+Termination.
+
+In the event you default on any payment or otherwise breach any of these Terms, NLMI reserves the right to terminate this Agreement and your rights granted under this Agreement, by giving you email notice of termination at the email you provided when you purchased access to the Plugin. If your rights are terminated under this section, you will not receive any refund.
+
+Changes. 
+
+NLMI reserves the right to change these Terms at any time, with notice to you via the email address you provided to NLMI at the time of your purchase of the Plugin. You have a duty to keep your email address current in your account with NLMI. By your continued use of the Plugin, you are deemed to have accepted any changes in the Terms. These Terms were last modified on February 13, 2015. 

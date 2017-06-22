@@ -1,0 +1,15 @@
+.fixed{
+position:unset !important;
+}
+
+.accepted_payments,.pending_payments,.rejected_payments,.closed_payments{
+    display: none;
+}
+
+.summary_of_result, .summary_of_result .summary_head,.summary_of_result .total_results table.wp-list-table.widefat.fixed, .affiliates_total_earning table.affiliates-earnings{
+float: left !important;
+text-align: start !important;
+
+}
+
+.tab-content{  margin-left: 10%;}

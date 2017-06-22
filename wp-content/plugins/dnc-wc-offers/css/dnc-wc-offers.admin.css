@@ -1,0 +1,173 @@
+/*
+Copyright (c) 2017 Designs and Codes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+*/
+
+/**
+ * The styling for dnc-wc-offer editors
+ */
+#wp-content-editor-tools {
+	padding-top: 0;
+	background-color: white;
+}
+
+#dnc-wc-offers-package-manager-template,
+#dnc-wc-offers-package-editor-template,
+#dnc-wc-offers-item-editor-template {
+	display: none !important;
+}
+
+.dnc-wc-offers-row {
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	margin-left: -6px;
+	margin-right: -6px;
+}
+
+.flex-wrap {
+	flex-wrap: wrap !important;
+}
+
+.items-start {
+	align-items: flex-start !important;
+}
+
+.dnc-wc-offers-heading {
+	flex: 1 1 0%;
+	margin: 17px auto !important;
+	padding: 0 14px !important;
+	line-height: 1.4;
+	font-weight: 600 !important;
+}
+
+.dnc-wc-offers-package-editor-body .dnc-wc-offers-heading {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.dnc-wc-offers-row.dnc-wc-offers-row > * {
+	margin: 0 !important;
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+}
+
+.dnc-wc-offers-container:last-child > .dnc-wc-offers-row > .dnc-wc-offers-sub-controls > .dnc-wc-offers-sub-control > .dnc-wc-offers-demote,
+.dnc-wc-offers-container:first-child > .dnc-wc-offers-row > .dnc-wc-offers-sub-controls > .dnc-wc-offers-sub-control > .dnc-wc-offers-promote {
+	visibility: hidden;
+}
+
+#poststuff h1.dnc-wc-offers-heading {
+	font-size: 23px;
+}
+
+#poststuff h2.dnc-wc-offers-heading {
+	font-size: 20px;
+}
+
+#poststuff h3.dnc-wc-offers-heading {
+	font-size: 17px;
+}
+
+#poststuff h4.dnc-wc-offers-heading {
+	font-size: 15px;
+}
+
+.dnc-wc-offers-package-editor-widget {
+	counter-reset: items-counter;
+}
+
+.dnc-wc-offers-items-editor-list,
+.dnc-wc-offers-package-editor-list,
+.dnc-wc-offers-package-manager-list {
+	counter-reset: editor-counter;
+	list-style: none;
+	margin-left: auto;
+}
+
+.dnc-wc-offers-package-editor-heading:after,
+.dnc-wc-offers-package-manager-heading:after {
+	counter-increment: editor-counter;
+	content: counter( editor-counter );
+}
+
+.dnc-wc-offers-item-editor-heading:after {
+	counter-increment: items-counter;
+	content: counter( items-counter );
+}
+
+.dnc-wc-offers-sub-controls {
+	flex: none;
+	display: flex;
+	flex-flow: row nowrap;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dnc-wc-offers-sub-control {
+	flex: none;
+	margin: 0;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.dnc-wc-offers-sub-control > .button {
+	padding: 3px 4px;
+	height: auto;
+	line-height: 1;
+}
+
+.dnc-wc-offers-control {
+	text-align: right;
+}
+
+.dnc-wc-offers-items-editor-control {
+	margin: 1em -12px -12px;
+	border-top: 1px solid #ddd;
+	padding: 12px;
+	background-color: #f5f5f5;
+}
+
+.dnc-wc-offers-body {
+	margin-top: 17px;
+}
+
+.dnc-wc-offers-widget {
+	margin: 17px auto;
+	border: 1px solid #e5e5e5;
+	padding: 12px;
+	background-color: white;
+}
+
+.dnc-wc-offers-widget > .dnc-wc-offers-heading {
+	margin-top: 0 !important;
+}
+
+.dnc-wc-offers-package-manager-item {
+	margin: 1em auto;
+}
+
+.dnc-wc-offers-package-manager-field {
+	margin-bottom: 0;
+}
+
+.dnc-wc-offers-row > .dnc-wc-offers-item-editor-field {
+	flex: 1 1 auto;
+}

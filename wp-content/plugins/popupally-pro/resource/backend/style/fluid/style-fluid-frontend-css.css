@@ -1,0 +1,28 @@
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-full-width-{{id}}-{{uid}}{
+{{position-code}}
+}
+#popup-embedded-box-pro-gfcr-{{id}}.popupally-pro-outer-full-width-{{id}}-{{uid}} {
+{{full-width-left}}
+}
+#popup-embedded-box-pro-gfcr-{{id}}{
+clear:both;
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-full-width-{{id}}-{{uid}},#popup-embedded-box-pro-gfcr-{{id}}.popupally-pro-outer-full-width-{{id}}-{{uid}} {
+width:{{full-width}}{{use-important}};
+height:{{height}}px{{use-important}};
+background-color:{{background-color}}{{use-important}};
+-webkit-box-shadow:{{select-border-box-shadow}}{{use-important}};
+-moz-box-shadow:{{select-border-box-shadow}}{{use-important}};
+box-shadow:{{select-border-box-shadow}}{{use-important}};
+z-index:999999{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-{{id}}-{{uid}},#popup-embedded-box-pro-gfcr-{{id}} .popupally-pro-outer-embedded-{{id}}-{{uid}} {
+width:{{width}}px{{use-important}};
+height:{{height}}px{{use-important}};
+background-color:{{background-color}}{{use-important}};
+background-image:{{background-image}}{{use-important}};
+background-size:contain{{use-important}};
+background-repeat:no-repeat{{use-important}};
+margin-left:auto{{use-important}};
+margin-right:auto{{use-important}};
+}

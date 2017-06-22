@@ -1,0 +1,1 @@
+<input id="popupally-fluid-{{id}}-{{uid}}-{{element-id}}" type="{{input-type}}" name="{{form-field}}" {{is-required}} class="popupally-fluid-content-element" placeholder="{{placeholder}}" />

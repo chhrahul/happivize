@@ -1,0 +1,12 @@
+{{element-id}}::-webkit-input-placeholder{
+color:{{placeholder-color}};
+}
+{{element-id}}:-moz-placeholder{
+color:{{placeholder-color}};
+}
+{{element-id}}::-moz-placeholder{
+color:{{placeholder-color}};
+}
+{{element-id}}:-ms-input-placeholder{
+color:{{placeholder-color}};
+}

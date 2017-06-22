@@ -1,0 +1,1 @@
+<input class="popupally-preview-{{id}}-{{uid}}-{{element-id}} popupally-preview-element" type="checkbox" {{default-checked}} id="popupally-preview-{{id}}-{{uid}}-{{element-id}}-{{responsive-id}}" style="display:block;position:absolute;{{element-css}}" />

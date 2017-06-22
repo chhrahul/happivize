@@ -1,0 +1,226 @@
+.clear-pro-gfcr {clear: both; height:0px; width: 100%;}
+.popupally-pro-outer-preview-gfcr-{{num}} {
+width:650px;
+}
+.popupally-pro-outer-preview-gfcr-{{num}},
+.popupally-pro-outer-960-preview-gfcr-{{num}},
+.popupally-pro-outer-640-preview-gfcr-{{num}} {
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+margin:10px 10px;
+background-color:{{background-color}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}}{overflow:visible;height:auto;padding:20px;text-align:center;}
+.popupally-pro-inner-pro-gfcr-{{num}} .content-pro-gfcr {
+text-align: center;
+vertical-align: middle;
+width:100%;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .desc-pro-gfcr {
+font-family: {{headline-font}};
+font-size:{{headline-font-size}}px;
+line-height:{{headline-line-height}}px;
+font-weight:{{headline-font-weight}};
+margin: 0 0 10px 0;
+color:{{headline-color}};
+display:{{bxsjbi-headline-hide-toggle}};
+text-align:{{headline-align}};
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+cursor: pointer;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="text"].field-pro-gfcr,
+.popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="email"].field-pro-gfcr {
+display:block;
+padding:{{input-box-padding-top}}px {{input-box-padding-right}}px {{input-box-padding-bottom}}px {{input-box-padding-left}}px;
+margin:0 auto 10px auto;
+width:{{input-box-width}};
+font-family:{{input-box-font}};
+font-size:{{input-box-font-size}}px;
+font-weight:{{input-box-font-weight}};
+line-height:{{input-box-line-height}}px;
+color:{{input-box-color}};
+text-align:{{input-box-align}};
+border: 1px solid #d4d3d3;
+background:{{input-box-background-color}};
+-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.67),inset 0 1px 3px rgba(5,5,5,0.13);
+-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.67),inset 0 1px 3px rgba(5,5,5,0.13);
+box-shadow: 0 1px 0 rgba(255,255,255,0.67),inset 0 1px 3px rgba(5,5,5,0.13);
+-webkit-border-radius: {{input-box-border-radius}}px;
+-moz-border-radius: {{input-box-border-radius}}px;
+border-radius: {{input-box-border-radius}}px;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+height:auto;
+float:none;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .field-pro-gfcr::-webkit-input-placeholder{
+color:{{input-box-color}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .field-pro-gfcr:-moz-placeholder{
+color:{{input-box-color}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .field-pro-gfcr::-moz-placeholder{
+color:{{input-box-color}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .field-pro-gfcr:-ms-input-placeholder{
+color:{{input-box-color}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="button"].submit-pro-gfcr{
+font-family:{{subscribe-button-text-font}};
+font-weight:{{subscribe-button-text-font-weight}};
+font-size:{{subscribe-button-text-font-size}}px;
+line-height:{{subscribe-button-text-line-height}}px;
+background-color:{{subscribe-button-color}};
+text-align:{{subscribe-button-text-align}};
+border-style: solid;
+border-width: 1pt;
+border-color:#C0C0C0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+color:{{subscribe-button-text-color}};
+text-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+cursor: pointer;
+-webkit-border-radius: {{subscribe-button-text-border-radius}}px;
+-moz-border-radius: {{subscribe-button-text-border-radius}}px;
+border-radius: {{subscribe-button-text-border-radius}}px;
+width:{{subscribe-button-text-width}};
+padding:{{subscribe-button-text-padding-top}}px 0 {{subscribe-button-text-padding-bottom}}px 0;
+margin:{{subscribe-button-margin-top}}px auto {{subscribe-button-margin-bottom}}px auto;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+height:auto;
+background-image: none;
+float:none;
+-webkit-appearance: none;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="button"].submit-pro-gfcr:hover {
+background-color:{{subscribe-button-color}};
+color:{{subscribe-button-text-color}};
+background-image:none;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .privacy-pro-gfcr{
+font-family:{{privacy-text-font}};
+font-weight:{{privacy-text-font-weight}};
+font-size:{{privacy-text-font-size}}px;
+line-height:{{privacy-text-line-height}}px;
+color:{{privacy-text-color}};
+display:{{bxsjbi-privacy-hide-toggle}};
+margin:{{privacy-text-margin-top}}px 0 {{privacy-text-margin-bottom}}px 0;
+text-align:{{privacy-text-align}};
+padding:0;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .logo-row-pro-gfcr {
+margin: {{logo-row-margin-top}}px 0 {{logo-row-margin-bottom}}px 0;
+display:{{bxsjbi-logo-row-hide-toggle}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .logo-img-pro-gfcr {
+height: 120px;
+margin: 0 20px 0 0;
+float: left;
+display:{{bxsjbi-logo-img-hide-toggle}};
+}
+.popupally-pro-inner-pro-gfcr-{{num}} .logo-text-pro-gfcr {
+height: auto;
+width: 100%;
+vertical-align: top;
+text-align:{{sales-text-align}};
+font-family:{{sales-text-font}};
+font-size:{{sales-text-font-size}}px;
+font-weight:{{sales-text-font-weight}};
+line-height:{{sales-text-line-height}}px;
+color:{{sales-text-color}};
+margin:0;
+padding:0;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+
+.popupally-pro-outer-960-preview-gfcr-{{num}} {
+	width:480px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}}{
+	padding:15px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .desc-pro-gfcr {
+	font-size:{{headline-960-font-size}}px;
+	line-height:{{headline-960-line-height}}px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="text"].field-pro-gfcr,
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="email"].field-pro-gfcr {
+	font-size:{{input-box-960-font-size}}px;
+	line-height:{{input-box-960-line-height}}px;
+	padding:{{input-box-960-padding-top}}px {{input-box-960-padding-right}}px {{input-box-960-padding-bottom}}px {{input-box-960-padding-left}}px;
+	width:{{input-box-960-width}};
+	border-radius:{{input-box-960-border-radius}}px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="button"].submit-pro-gfcr {
+	font-size:{{subscribe-button-text-960-font-size}}px;
+	line-height:{{subscribe-button-text-960-line-height}}px;
+	padding:{{subscribe-button-text-960-padding-top}}px 0 {{subscribe-button-text-960-padding-bottom}}px 0;
+	width:{{subscribe-button-text-960-width}};
+	border-radius:{{subscribe-button-text-960-border-radius}}px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .privacy-pro-gfcr {
+	font-size:{{privacy-text-960-font-size}}px;
+	line-height:{{privacy-text-960-line-height}}px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .logo-text-pro-gfcr {
+	font-size:{{sales-text-960-font-size}}px;
+	line-height:{{sales-text-960-line-height}}px;
+}
+.popupally-pro-outer-960-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .logo-img-pro-gfcr {
+height:80px;
+margin:0 15px 0 0;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}}{
+	padding:10px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} {
+	width:300px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .desc-pro-gfcr {
+	font-size:{{headline-640-font-size}}px;
+	line-height:{{headline-640-line-height}}px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="text"].field-pro-gfcr,
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="email"].field-pro-gfcr {
+	font-size:{{input-box-640-font-size}}px;
+	line-height:{{input-box-640-line-height}}px;
+	padding:{{input-box-640-padding-top}}px {{input-box-640-padding-right}}px {{input-box-640-padding-bottom}}px {{input-box-640-padding-left}}px;
+	width:{{input-box-640-width}};
+	border-radius:{{input-box-640-border-radius}}px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .popupally-pro-center-pro-gfcr .content-pro-gfcr input[type="button"].submit-pro-gfcr {
+	font-size:{{subscribe-button-text-640-font-size}}px;
+	line-height:{{subscribe-button-text-640-line-height}}px;
+	padding:{{subscribe-button-text-640-padding-top}}px 0 {{subscribe-button-text-640-padding-bottom}}px 0;
+	width:{{subscribe-button-text-640-width}};
+	border-radius:{{subscribe-button-text-640-border-radius}}px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .privacy-pro-gfcr {
+	font-size:{{privacy-text-640-font-size}}px;
+	line-height:{{privacy-text-640-line-height}}px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .logo-text-pro-gfcr {
+	font-size:{{sales-text-640-font-size}}px;
+	line-height:{{sales-text-640-line-height}}px;
+}
+.popupally-pro-outer-640-preview-gfcr-{{num}} .popupally-pro-inner-pro-gfcr-{{num}} .logo-img-pro-gfcr {
+height:60px;
+margin:0 10px 0 0;
+}
+.popupally-pro-outer-preview-gfcr-{{num}} input,
+.popupally-pro-outer-960-preview-gfcr-{{num}} input,
+.popupally-pro-outer-640-preview-gfcr-{{num}} input{
+	min-width:initial;
+	max-width:none;
+	min-height:initial;
+	max-height:none;
+}

@@ -1,0 +1,38 @@
+* 1.2.4
+
+  - Improvement: Added the affiliates_gravity_forms_amount filter.
+  - Improvement: Added the affiliates_gravity_forms_products_amount filter.
+  - Fixed: correlate fields by ID in referral data
+
+* 1.2.3
+
+  - Added payment status Paid handling.
+  - Added additional refund payment handler.
+  - Added additional payment completed handler.
+
+* 1.2.2
+
+  - Fixed a PHP notice thrown on missing field labels
+
+* 1.2.1
+
+  - Fixed affiliate email not stored on affiliate entry when registering through a
+    form enabled with user registration.
+
+* 1.2.0
+
+  - Improvement: Now supports automatic updates.
+
+* 1.1.0
+
+  - Improvement: Field data is stored indexed by field ID so that the collected values
+    are available along with the referrals and also to make the values accessible
+    via tokens in notifications.
+
+* 1.0.1
+
+  - Not storing entry data.
+
+* 1.0.0
+
+  - Initial release.

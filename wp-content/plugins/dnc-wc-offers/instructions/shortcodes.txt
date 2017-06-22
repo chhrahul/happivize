@@ -1,0 +1,88 @@
+Shortcodes
+
+image -- Stand-in for a raw image tag
+
+Usage: [image id="" class="" title="" align="" size="" alt="" link="" style="" /]
+
+id: The attachment id for the image in question.
+class: CSS classes to add to the image
+title: Specifies the tooltip for the image, also useful for SEO.  Defaults to whatever is specified for the image in the media library.
+align: The Wordpress alignment of the image.  Defaults:
+	* none: No special alignment
+	* left: Pull-to-left (allowing text on the right)
+	* right: Pull-to-right (allowing text on the left)
+	* center: Umm... center-aligned.
+size: And named Wordpress image size, including custom ones.  Examples: "full" or "thumbnail"
+alt: The altnerate text to render in case the image can't load.  Defaults to whatever is specified for the image in the media library.
+link: If given, makes this image a clickable link to the given url.
+style: Raw CSS styles for the image.
+
+Additionally, and data-* attributes are passed along verbatim, preserving any html5 data-attributes.
+
+This exists because Wordpress by default hardlinks every embedded image, making testing development more difficult than need-be.  The shortcode also links into the "Add Media" control, allowing that to insert this shortcode in place of a normal <img> element.  Does not use its content.
+
+
+offer_banner -- Emits a banner for the top of the offer
+
+Usage: [offer_banner id="" /]
+
+id: An image attachment id, if desired.  Defaults to the Happivize banner
+
+
+offer_testimonial -- Emits a testimonial
+
+Usage: [offer_testimonial cite=""][/offer_testimonial]
+
+cite: The citation or source of the testimonial
+content: The text of the testimonial.  May include paragraphs (<p>)
+
+
+offer_heading -- Emits a styled heading
+
+Usage: [offer_heading type="" tag=""][/offer_heading]
+
+tag: The html tag used by the shortcode.  Allows h1 through h6, p or div.  If unspecified, determined by type below.
+type: The "flavor" of the tagline.  By default, plain.  One of:
+	* plain: No special styling.  Defaults to an h2.
+	* tagline: Pink text. Defaults to an h1.
+	* heading: Aqua, "Shadows into Light" font. Defaults to an h3
+	* subheading: Orange. Defaults to an h4
+content: The text of the heading
+
+Additionally, [offer_tagline] is an alias for [offer_heading type="tagline"].  It supports the tag attribute.
+
+
+offer_speaker -- Emits a speaker information block
+
+Usage: [offer_speaker /]
+
+Does not use its content.
+
+
+offer_section -- Sets up a section within the post or page
+
+Usage: [offer_section width="" background="" color=""][/offer_section]
+
+width: One of narrow or full
+background: Sets the background color for the section
+color: Sets the foreground (text) color for the section
+content: The text/html for the section
+
+
+offer_callout -- Sets up a small callout element
+
+Usage: [offer_callout option=""][/offer_callout]
+
+option: One of
+	* simple: Normal text in a grey box.  This box will grow with its content
+	* fancy: White text on a pink backsplash.  This box will not grow with its content, due to the nature of the backsplash
+content: The text of the callout
+
+
+offer_notice -- Sets up a notice element
+
+Usage: [offer_notice][/offer_notice]
+
+content: The text of the notice
+
+The resulting element will be horizontally inset, italic and pink.

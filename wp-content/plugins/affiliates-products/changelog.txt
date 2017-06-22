@@ -1,0 +1,64 @@
+* 1.5.1
+
+  - WordPress 4.4 compatible
+  - Fixed use of deprecated function to obtain order discount.
+  - Latest tested with WooCommerce 2.4.11
+  - Fixed order discount subtracted twice to calculate commission in some cases.
+
+* 1.5.0
+
+  - WordPress 4.0 compatible
+  - WooCommerce 2.2.0 compatible
+  - Changed updater
+
+* 1.4.6
+
+  - Fixed : all products were shown when filtering by affiliate id or name and
+    the affiliate has no products assigned
+  - Fixed : referrals recorded for deleted or invalid affiliates
+  - Fixed : deleted or invalid affiliates cannot be assigned to products
+
+* 1.4.5
+
+  - Fix : WooCommerce - Quantity corrections for coupon calculations.
+  - Improvement : Not recording referrals for <= 0 amount referrals.
+
+* 1.4.4
+
+  - Improvement : WooCommerce - Calculating net item totals by subtracting
+    discounts applied after taxes and prorated cart discounts not already
+    applied to item totals.
+
+  - Improvement : Jigoshop - Calculating net item totals (similar to above).
+
+  - Fix : Jigoshop - product quantity taken into account when it shouldn't.
+
+* 1.4.3
+
+  - WooCommerce 2 compatibility fixed
+
+* 1.4.2
+
+  - 66 coupon deductions
+
+* 1.4.1
+
+  - WP 3.5 compatible
+
+* 1.4.0
+
+  - support for Jigoshop added
+  - Cart66 Lite recognition fixed
+  - Cart66 : currency code fixed  
+
+* 1.3.0
+
+  - enhancements
+
+* 1.2.0
+
+  - support for WooCommerce added
+
+* 1.1.0
+
+  - supports Cart66 Pro

@@ -1,0 +1,38 @@
+[28-Oct-2016 21:46:08 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[28-Oct-2016 21:46:16 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[28-Oct-2016 21:46:21 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[30-Nov-2016 01:58:11 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[23-Feb-2017 17:51:20 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[23-Feb-2017 17:51:25 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[27-Apr-2017 12:24:58 UTC] PHP Warning:  include(/home/nginx/domains/happivize.com/public/wp-content/advanced-cache.php): failed to open stream: No such file or directory in /home/nginx/domains/happivize.com/public/wp-settings.php on line 84
+[27-Apr-2017 12:24:58 UTC] PHP Warning:  include(): Failed opening '/home/nginx/domains/happivize.com/public/wp-content/advanced-cache.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/nginx/domains/happivize.com/public/wp-settings.php on line 84
+[27-Apr-2017 12:24:58 UTC] PHP Notice:  Undefined index: HTTP_HOST in /home/nginx/domains/happivize.com/public/wp-content/plugins/mp3-jplayer/main.php on line 68
+[27-Apr-2017 12:24:58 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/nginx/domains/happivize.com/public/wp-settings.php:84) in /home/nginx/domains/happivize.com/public/wp-content/plugins/php-code-for-posts/php-code-for-posts.php on line 14
+[27-Apr-2017 12:24:58 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/nginx/domains/happivize.com/public/wp-settings.php:84) in /home/nginx/domains/happivize.com/public/wp-content/plugins/php-code-for-posts/php-code-for-posts.php on line 14
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Config
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Config
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Config
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Dispatcher
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Dispatcher
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Dispatcher
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Environment
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Environment
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Environment
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\ConfigCompiler
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\ConfigCompiler
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\ConfigCompiler
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Generic_Plugin
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Generic_Plugin
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Generic_Plugin
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\BrowserCache_Plugin
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\BrowserCache_Plugin
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\BrowserCache_Plugin
+[27-Apr-2017 12:24:58 UTC] PHP Notice:  Undefined index: REMOTE_ADDR in /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-products-filter/index.php on line 29
+[27-Apr-2017 12:24:58 UTC] PHP Notice:  Undefined index: REMOTE_ADDR in /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-products-filter/classes/storage.php on line 34
+[27-Apr-2017 12:24:58 UTC] PHP Fatal error:  Class 'WC_Product_Simple' not found in /home/nginx/domains/happivize.com/public/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-product-subscription.php on line 18
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Content
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Content
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Content
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Bus
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Bus
+[27-Apr-2017 12:24:58 UTC] [MZ_Autoloader::autoload] Invalid classname: W3TC\Util_Bus

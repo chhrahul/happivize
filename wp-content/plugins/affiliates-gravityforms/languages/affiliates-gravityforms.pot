@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2015-01-08 22:02+0100\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:118
+msgid   "Affiliate Registration"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:61
+msgid   "Affiliates"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:164
+msgid   "Amount"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:216
+msgid   "Base Amount"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:125
+msgid   "Create an affiliate account for new users who register through this "
+        "form?"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:145
+msgid   "Enable"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:148
+msgid   "Enable the Affiliates integration for this form?"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:219
+msgid   "Enable this option only if the normal referral calculation routines "
+        "should be applied, instead of using the rate indicated here."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:130
+#: includes/class-affiliates-gravity-forms-form-settings.php:153
+msgid   "Enabled"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-handler.php:267
+msgid   "Entry"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-handler.php:257
+msgid   "Entry ID"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:202
+msgid   "For example, to grant a <strong>10%</strong> commission, indicate "
+        "<strong>0.1</strong>."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-handler.php:262
+msgid   "Form ID"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:199
+msgid   "If a rate is provided here, the referral amount is obtained by "
+        "multiplying the amount (or the form's payment or order amount) by "
+        "this rate."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:177
+msgid   "If an amount is set here, it will be used as the referral amount."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:133
+msgid   "If enabled, an affiliate account will be created for new users "
+        "registered with this form."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:156
+msgid   "If enabled, referrals are recorded for form submissions that have "
+        "been referred by an affiliate."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:180
+msgid   "If the amount is left empty and a payment amount can be obtained for "
+        "the submitted form, the form's payment amount will be used."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:183
+msgid   "If the amount is left empty and the order total can be obtained for "
+        "the submitted form, the order total will be used."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:172
+msgid   "Indicating an amount here is <strong>optional</strong>, as the "
+        "referral amount that is credited depends on the following rules, "
+        "listed in order of precedence:"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:221
+msgid   "Note that if a rate is indicated, it will also affect the base "
+        "amount."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:194
+msgid   "Rate"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:160
+msgid   "Referral Amount"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:208
+msgid   "Referral Base Amount"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:188
+msgid   "Referral Rate"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:141
+msgid   "Referral Settings"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:122
+msgid   "Register an Affiliate Account"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:228
+msgid   "Save"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms.php:103
+msgid   "The <strong>Affiliates Gravity Forms Integration</strong> plugin "
+        "requires an appropriate Affiliates plugin: <a href=\"http://www."
+        "itthinx.com/plugins/affiliates\" target=\"_blank\">Affiliates</a>, "
+        "<a href=\"http://www.itthinx.com/plugins/affiliates-pro\" target="
+        "\"_blank\">Affiliates Pro</a> or <a href=\"http://www.itthinx.com/"
+        "plugins/affiliates-enterprise\" target=\"_blank\">Affiliates "
+        "Enterprise</a>."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:170
+msgid   "The referral amount is granted to the referring affiliate on each "
+        "form submission."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:191
+msgid   "The referral rate for this form."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:100
+msgid   "The settings have been saved."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:135
+msgid   "This <strong>requires</strong> the <em>Gravity Forms User "
+        "Registration Add-On</em> and the form to be enabled for user "
+        "registration, otherwise it will have no effect."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:223
+msgid   "This setting is only effective with <em>Affiliates Pro</em> and "
+        "<em>Affiliates Enterprise</em>."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:204
+msgid   "This setting should be left empty, if the full amount should be "
+        "granted as the referral amount."
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-form-settings.php:211
+msgid   "Use the amount or payment amount as the base amount for referral "
+        "calculation?"
+msgstr  ""
+
+#: includes/class-affiliates-gravity-forms-handler.php:278
+msgid   "View"
+msgstr  ""

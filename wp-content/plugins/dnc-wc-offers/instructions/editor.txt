@@ -1,0 +1,94 @@
+Disclaimer: These editor instructions presume familiarity with general Wordpress editors.  Visual locations will be given based on where they are for the "desktop-sized" variant of the editor, but all elements are still functional for the "mobile-sized" variant.
+
+
+The editor for offers can be accessed by using the "Offers" menu on the left-hand side of the Wordpress admin interface.  In principle, it will behave like the page or post editor except that it has structural support for Packages and Items as well as linking packages to WooCommerce Products.
+
+
+Some general things of note:
+* Deletions of Packages and Items are PERMANENT, and you will be prompted before deleting a Package or Item.
+* The Packages listed in the Package Manager are reordered independently.  This is to allow for easy re-arranging should the wrong WooCommerce Product be linked for a given description.
+* Deleting of Packages happens only through the Package Manager, but also deletes the corresponding Package in the Main Editor.
+
+A note on rendering -- the buy-now widgets are output in predetermined locations:
+* The current Package's buy-now widget after all of the content for that Package.
+* A listing of every Package's buy-now widget after the Offer Outro.
+* This can be changed or enhanced at the customer's request by contacting service@designsandcodes.com.
+
+
+-- PACKAGE MANAGER --
+On the upper-right sidebar, the first widget will be the Package Manager.  This manages the number of Packages for the Offer, as well as which WooCommerce Products are associated with which Packages.
+
+* The associated WooCommerce Product can be selected from the dropdown.
+* The "trangle-up"/"triangle-down" buttons can be used to reorder the packages.
+* The "x" button is for deleting a package.
+* The "eyeball" button is for showing/hiding an editor.
+
+As above, reordering Packages here does not affect the order of Packages in the Main Editor.
+
+
+-- MAIN EDITOR --
+Consisting of the main region of the page, this handles the structural editting of the offer text and content.  Each major section of the Main Editor will be explained below.
+
+* All of the major editors have an eyeball icon in their upper-right corner.  This is to show/hide that particular editor (as the overall page can be very long).
+* Editors will be described in the order they are presented on the page, but here is a quick visual outline:
+
+Offer Title
+Offer Intro
+Packages
+	Package A
+		Package Intro
+		Items
+			Item 1
+			Item 2
+			...
+		Package Outro
+	Package B
+		Package Intro
+		Items
+			Item 3
+			Item 4
+			...
+		Package Outro
+	...
+Offer Outro
+
+
+-- MAIN EDITOR: Offer Title --
+This (admittedly simple) field handles the title of the offer, which is additionally used by Wordpress when generating the title element for the resulting page.
+
+
+-- MAIN EDITOR: Offer Intro --
+This widget handles the content that comes before the package descriptions--as implied, it introduces the offer.  Normal Wordpress rules apply.
+
+
+-- MAIN EDITOR: Packages Editor --
+This widget holds each of the associated Package Editors.
+
+* Each of the Package Editors supports a "triangle-up"/"triangle-down" button to reorder the Package Editors.  As above, these are reordered independently of the Package Manager Packages.
+
+
+-- MAIN EDITOR: Package Intro Content --
+For each Package, the intro editor determines what is shown before the items/bonuses listing--that is, it introduces the package.
+
+
+-- MAIN EDITOR: Items Editor --
+This widget holds all of the Item Editors for the current Package.
+
+* Each of the Item Editors supports a "triangle-up"/"triangle-down" button to reorder the Items within the Package.
+* Each of the Item Editors supports a "x" button to delete the Item.  This action is permanent, and requires a confirmation.
+
+Each item has a few fields:
+* A checkbox to determine if the editor is for a "normal" Item (checkbox is clear) or a "bonus" Item (checkbox is checked).
+* A dropdown to determine what kind of divider trails the Item.  The last Item in a package NEVER shows its divider.
+* The Item's title.
+* What kind of deliverable.  Example: "MP3 Digital Download"
+* The Item's value.  Example: "Value: $150"
+* The Item's description.
+
+
+-- MAIN EDITOR: Package Outro Content --
+The mirror to the Package Intro Content Editor, this widget determines what content follows the Items listing.
+
+
+-- MAIN EDITOR: Offer Outro --
+The mirror to the Offer Intro Editor, this widget determines what content follows the listing of Packages.  The only things following it are the guarantee section and final listing of sales widgets for all of the packages.

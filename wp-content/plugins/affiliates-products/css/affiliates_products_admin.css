@@ -1,0 +1,44 @@
+/**
+ * affiliates_products_admin.css
+ *
+ * Copyright (c) "kento" Karim Rahimpur www.itthinx.com
+ *
+ * This code is provided subject to the license granted.
+ * Unauthorized use and distribution is prohibited.
+ * See COPYRIGHT.txt and LICENSE.txt
+ *
+ * This code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * This header and all notices must be kept intact.
+ *
+ * @author Karim Rahimpur
+ * @package affiliates-products
+ * @since affiliates-products 1.0.0
+ */
+div.affiliates-products {
+	margin-right: 1em;
+	padding-bottom: 1em;
+}
+.product-id-filter,
+.product-name-filter,
+.affiliate-id-filter,
+.affiliate-name-filter {
+	margin-right: 1em;
+}
+.page-options {
+	float: left;
+	display: inline;
+	min-width: 250px;
+	margin-bottom: 2px;
+}
+.tablenav.top {
+	display: inline;
+	width: 250px;
+}
+tr.save td {
+	text-align: center;
+	padding: 1em;
+}
+#affiliate_custompro td select, #affiliate_custompro td input{width: 100%;}

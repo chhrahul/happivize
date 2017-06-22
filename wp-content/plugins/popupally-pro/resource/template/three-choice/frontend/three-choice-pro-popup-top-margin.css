@@ -1,0 +1,10 @@
+html { margin-top: {{iejsye-height}}px !important; }
+* html body { margin-top: {{iejsye-height}}px !important; }
+@media (max-width: 960px) {
+	html { margin-top: {{iejsye-height-960}}px !important; }
+	* html body { margin-top: {{iejsye-height-960}}px !important; }
+}
+@media (max-width: 640px) {
+	html { margin-top: {{iejsye-height-640}}px !important; }
+	* html body { margin-top: {{iejsye-height-640}}px !important; }
+}

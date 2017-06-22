@@ -1,0 +1,122 @@
+#popup-box-pro-gfcr-{{id}}.popupally-pro-overlay-{{id}}-{{uid}} {{{background-overlay-css}}display:none;background-color:rgba({{overlay-color-rgba}}){{use-important}};}
+#popup-box-pro-gfcr-{{id}}.popupally-pro-opened-pro-gfcr-{{id}} {display:block !important;z-index:999999{{use-important}};}
+
+#popup-box-pro-gfcr-{{id}} input,#popup-box-pro-gfcr-{{id}} textarea,#popup-embedded-box-pro-gfcr-{{id}} input,#popup-embedded-box-pro-gfcr-{{id}} textarea{
+	min-width:initial{{use-important}};
+	max-width:none{{use-important}};
+	min-height:initial{{use-important}};
+	max-height:none{{use-important}};
+}
+.popupally-pro-hoverable-element{
+	cursor:pointer{{use-important}};
+}
+.popupally-pro-hoverable-element:hover{
+	opacity:0.5{{use-important}};
+}
+.popupally-pro-top-page-jehjsq-{{id}} {
+	position:absolute{{use-important}};
+	top:0{{use-important}};
+	z-index:99999{{use-important}};
+}
+.popupally-pro-top-page-follow-jehjsq-{{id}} {
+	position:fixed{{use-important}};
+	top:0{{use-important}};
+	z-index:99999{{use-important}};
+}
+.popupally-pro-end-page-follow-jehjsq-{{id}} {
+	position:fixed{{use-important}};
+	bottom:0{{use-important}};
+	z-index:99999{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-full-width-{{id}}-{{uid}}{
+position:{{content-box-position}}{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-{{id}}-{{uid}}{
+-webkit-border-radius: 4px{{use-important}};
+-moz-border-radius: 4px{{use-important}};
+border-radius: 4px{{use-important}};
+z-index:999999{{use-important}};
+}
+#popup-embedded-box-pro-gfcr-{{id}}.popupally-pro-outer-embedded-{{id}}-{{uid}} {
+margin:0 auto{{use-important}};
+clear:both{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-inner-{{id}}-{{uid}},#popup-embedded-box-pro-gfcr-{{id}} .popupally-pro-inner-{{id}}-{{uid}}{
+position:relative{{use-important}};
+overflow:visible{{use-important}};
+width:100%{{use-important}};
+height:100%{{use-important}};
+padding:0{{use-important}};
+margin:0{{use-important}};
+text-align:center{{use-important}};
+-webkit-box-sizing:border-box{{use-important}};
+-moz-box-sizing:border-box{{use-important}};
+box-sizing:border-box{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-fluid-content-element,#popup-embedded-box-pro-gfcr-{{id}} .popupally-fluid-content-element{
+position:absolute;
+display:block;
+background-size:contain;
+background-repeat:no-repeat;
+width:100px;
+height:100px;
+font-family:Georgia, serif;
+font-size:14px;
+line-height:20px;
+text-align:left;
+font-weight:400;
+top:0px;
+left:0px;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+z-index:0;
+border-style:none;
+border-width:0px;
+border-color:transparent;
+border-radius:0px;
+background-color:transparent;
+padding:0;
+margin:0;
+}
+#popup-box-pro-gfcr-{{id}} input[type="checkbox"].popupally-fluid-content-element,#popup-embedded-box-pro-gfcr-{{id}} input[type="checkbox"].popupally-fluid-content-element{
+-webkit-appearance:checkbox;
+-moz-appearance:checkbox;
+}
+#popup-box-pro-gfcr-{{id}} input[type="text"].popupally-fluid-content-element,#popup-embedded-box-pro-gfcr-{{id}} input[type="text"].popupally-fluid-content-element,
+#popup-box-pro-gfcr-{{id}} input[type="email"].popupally-fluid-content-element,#popup-embedded-box-pro-gfcr-{{id}} input[type="email"].popupally-fluid-content-element{
+background-color:transparent;
+border:none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow:none;
+color:#000000;
+}
+#popup-box-pro-gfcr-{{id}} input[type="submit"].popupally-fluid-content-element,#popup-embedded-box-pro-gfcr-{{id}} input[type="submit"].popupally-fluid-content-element{
+cursor:pointer{{use-important}};
+-webkit-appearance:none{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} input[type="submit"].popupally-fluid-content-element:hover,#popup-embedded-box-pro-gfcr-{{id}} input[type="submit"].popupally-fluid-content-element:hover{
+opacity:0.5{{use-important}};
+}
+#popup-box-pro-gfcr-{{id}} .popupally-pro-outer-{{id}}-{{uid}} .popupally-pro-close{
+background-image:url('{{plugin_uri}}resource/frontend/img/fancy_close.png'){{use-important}};
+background-size:cover{{use-important}};
+display: block{{use-important}};
+position: absolute{{use-important}};
+top: -12px{{use-important}};
+right: -12px{{use-important}};
+width: 30px{{use-important}};
+height: 30px{{use-important}};
+color: white{{use-important}};
+cursor: pointer{{use-important}};
+z-index:999999{{use-important}};
+}
+[svvuyx-redirect-popup],
+[svvuyx-redirect-url]{
+cursor:pointer{{use-important}};
+}
+[svvuyx-redirect-popup]:hover,
+[svvuyx-redirect-url]:hover{
+opacity:0.5{{use-important}};
+}

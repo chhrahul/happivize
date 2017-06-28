@@ -362,11 +362,34 @@ class Affiliates_Registration {
 			if ( isset( $options['terms_post_id'] ) ) {
 				$terms_post = get_post( $options['terms_post_id'] );
 				if ( $terms_post ) {
-					$terms_post_link = '<a target="_blank" href="' . esc_url( get_permalink( $terms_post->ID ) ) . '">' . get_the_title( $terms_post->ID ) . '</a>';
+					$terms_post_link = '<a class="modalaffiliateRegister" target="_blank" data-toggle="modal" data-target="#modalaffiliateRegister">' . get_the_title( $terms_post->ID ) . '</a>';
 					$terms = sprintf(
-						apply_filters( 'affiliates_terms_post_link_text', __( 'By signing up, you indicate that you have read and agree to the %s.', 'affiliates' ) ),
+						apply_filters( 'affiliates_terms_post_link_text', __( '<input type="checkbox" name="affiliate_terms_conditions" value="affiliate_terms_conditions" id="affiliate_terms_conditions" required ><p>I have read and agree to the %s.</p>', 'affiliates' ) ),
 						$terms_post_link
 					);
+					$id=$terms_post; 
+					$post = get_post($id); 
+					$postheading = get_the_title($id);
+					$content = apply_filters('the_content', $post->post_content); 					
+					?>
+					<div id="modalaffiliateRegister" class="modal fade" role="dialog">
+					    <div class="modal-dialog">
+					        <!-- Modal content-->
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <button type="button" class="close" data-dismiss="modal">&times;</button>
+					                <h4 class="modal-title" style="text-align-last: center"><?php echo $postheading; ?></h4>
+					            </div>
+					            <div class="modal-body">
+					            <?php echo $content; ?>
+					            </div>
+					            <div class="modal-footer">
+					                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					<?php
 				}
 			}
 

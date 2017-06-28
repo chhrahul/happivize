@@ -1,0 +1,398 @@
+0000.001 (0) Opened log file at time: Mon, 26 Jun 2017 12:00:12 +0000 on http://localhost/happivize
+0000.052 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.1 WP: 4.7.5 PHP: 5.6.14 (apache2handler, Windows NT DESKTOP-8S8VBRM 6.2 build 9200 (Windows 8 Professional Edition) i586) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 49.8M | 50M) multisite: N openssl: OpenSSL 1.0.1p 9 Jul 2015 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.122 (0) Free space on disk containing Updraft's temporary directory: 97899.9 MB
+0000.186 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: weekly)
+0000.234 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.742 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1497576416, seconds_ago=901997)
+0000.964 (0) Set semaphore last lock (d) time to 2017-06-26 12:00:13
+0000.992 (0) Semaphore lock (d) complete
+0001.127 (0) Backup run: resumption=0, nonce=ad18e5e126ca, begun at=1498478412 (1s ago), job type=backup
+0001.217 (0) Scheduling a resumption (1) after 300 seconds (1498478713) in case this run gets aborted
+0001.430 (0) This backup run is not intended for files - skipping
+0001.454 (0) Beginning creation of database dump (WordPress DB)
+0001.661 (0) Table hp_options: Total expected rows (approximate): 3045
+0001.877 (0) Table hp_options: Total rows added: 3159 in 0.19 seconds
+0001.925 (0) Table hp_options: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_options.table.gz - 398.3 KB)
+0002.161 (0) Table hp_users: Total expected rows (approximate): 288
+0002.481 (0) Table hp_users: Total rows added: 288 in 0.23 seconds
+0002.646 (0) Table hp_users: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_users.table.gz - 17.3 KB)
+0003.095 (0) Table hp_usermeta: Total expected rows (approximate): 8349
+0003.779 (0) Table hp_usermeta: Total rows added: 8558 in 0.62 seconds
+0004.285 (0) Table hp_usermeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_usermeta.table.gz - 108.9 KB)
+0004.577 (0) Table hp_commentmeta: Total expected rows (approximate): 498
+0004.725 (0) Table hp_commentmeta: Total rows added: 498 in 0.09 seconds
+0004.778 (0) Table hp_commentmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_commentmeta.table.gz - 12.2 KB)
+0004.954 (0) Table hp_comments: Total expected rows (approximate): 1970
+0005.994 (0) Table hp_comments: Total rows added: 2012 in 0.98 seconds
+0006.765 (0) Table hp_comments: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_comments.table.gz - 41.6 KB)
+0007.136 (0) Table hp_links: Total expected rows (approximate): 0
+0007.225 (0) Table hp_links: Total rows added: 0 in 0.03 seconds
+0007.286 (0) Table hp_links: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_links.table.gz - 0.4 KB)
+0007.513 (0) Table hp_postmeta: Total expected rows (approximate): 57960
+0014.057 (0) Table hp_postmeta: Total rows added: 66306 in 6.51 seconds
+0014.282 (0) Table hp_postmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_postmeta.table.gz - 910.9 KB)
+0014.532 (0) Table hp_posts: Total expected rows (approximate): 30176
+0053.884 (0) Table hp_posts: Total rows added: 28673 in 39.31 seconds
+0053.976 (0) Table hp_posts: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_posts.table.gz - 3333.9 KB)
+0054.214 (0) Table hp_snippets: Total expected rows (approximate): 3
+0054.284 (0) Table hp_snippets: Total rows added: 3 in 0.03 seconds
+0054.337 (0) Table hp_snippets: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_snippets.table.gz - 2.4 KB)
+0054.540 (0) Table hp_term_relationships: Total expected rows (approximate): 26118
+0055.192 (0) Table hp_term_relationships: Total rows added: 26621 in 0.62 seconds
+0055.458 (0) Table hp_term_relationships: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_term_relationships.table.gz - 66.9 KB)
+0055.630 (0) Table hp_term_taxonomy: Total expected rows (approximate): 104
+0055.758 (0) Table hp_term_taxonomy: Total rows added: 104 in 0.03 seconds
+0055.860 (0) Table hp_term_taxonomy: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_term_taxonomy.table.gz - 1.2 KB)
+0055.997 (0) Table hp_termmeta: Total expected rows (approximate): 0
+0056.056 (0) Table hp_termmeta: Total rows added: 0 in 0.02 seconds
+0056.118 (0) Table hp_termmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_termmeta.table.gz - 0.4 KB)
+0056.243 (0) Table hp_terms: Total expected rows (approximate): 104
+0056.309 (0) Table hp_terms: Total rows added: 104 in 0.01 seconds
+0056.351 (0) Table hp_terms: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_terms.table.gz - 1.8 KB)
+0056.521 (0) Table hp_woocommerce_order_itemmeta: Total expected rows (approximate): 10618
+0057.119 (0) Table hp_woocommerce_order_itemmeta: Total rows added: 10640 in 0.56 seconds
+0057.160 (0) Table hp_woocommerce_order_itemmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_order_itemmeta.table.gz - 61.3 KB)
+0057.293 (0) Table hp_woocommerce_termmeta: Total expected rows (approximate): 92
+0057.395 (0) Table hp_woocommerce_termmeta: Total rows added: 92 in 0.07 seconds
+0057.508 (0) Table hp_woocommerce_termmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_termmeta.table.gz - 1 KB)
+0057.667 (0) Table hp_aff_affiliates: Total expected rows (approximate): 20
+0057.740 (0) Table hp_aff_affiliates: Total rows added: 20 in 0.03 seconds
+0057.781 (0) Table hp_aff_affiliates: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates.table.gz - 0.9 KB)
+0058.089 (0) Table hp_aff_affiliates_attributes: Total expected rows (approximate): 0
+0058.351 (0) Table hp_aff_affiliates_attributes: Total rows added: 1 in 0.13 seconds
+0058.435 (0) Table hp_aff_affiliates_attributes: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_attributes.table.gz - 0.4 KB)
+0058.713 (0) Table hp_aff_affiliates_relations: Total expected rows (approximate): 0
+0058.814 (0) Table hp_aff_affiliates_relations: Total rows added: 0 in 0.04 seconds
+0058.888 (0) Table hp_aff_affiliates_relations: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_relations.table.gz - 0.4 KB)
+0059.059 (0) Table hp_aff_affiliates_users: Total expected rows (approximate): 5
+0059.125 (0) Table hp_aff_affiliates_users: Total rows added: 5 in 0.01 seconds
+0059.168 (0) Table hp_aff_affiliates_users: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_users.table.gz - 0.3 KB)
+0059.348 (0) Table hp_aff_campaigns: Total expected rows (approximate): 0
+0059.526 (0) Table hp_aff_campaigns: Total rows added: 0 in 0.05 seconds
+0059.679 (0) Table hp_aff_campaigns: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_campaigns.table.gz - 0.4 KB)
+0059.925 (0) Table hp_aff_hits: Total expected rows (approximate): 147
+0060.052 (0) Table hp_aff_hits: Total rows added: 147 in 0.08 seconds
+0060.125 (0) Table hp_aff_hits: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_hits.table.gz - 2.8 KB)
+0060.243 (0) Table hp_aff_referrals: Total expected rows (approximate): 367
+0060.329 (0) Table hp_aff_referrals: Total rows added: 367 in 0.06 seconds
+0060.438 (0) Table hp_aff_referrals: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_referrals.table.gz - 7.6 KB)
+0060.697 (0) Table hp_aff_robots: Total expected rows (approximate): 0
+0060.730 (0) Table hp_aff_robots: Total rows added: 0 in 0.01 seconds
+0060.767 (0) Table hp_aff_robots: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_robots.table.gz - 0.3 KB)
+0061.022 (0) Table hp_aff_uris: Total expected rows (approximate): 1
+0061.093 (0) Table hp_aff_uris: Total rows added: 1 in 0.02 seconds
+0061.159 (0) Table hp_aff_uris: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_uris.table.gz - 0.4 KB)
+0061.326 (0) Table hp_aff_user_agents: Total expected rows (approximate): 0
+0061.443 (0) Table hp_aff_user_agents: Total rows added: 1 in 0.08 seconds
+0061.480 (0) Table hp_aff_user_agents: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_user_agents.table.gz - 0.4 KB)
+0061.704 (0) Table hp_ak_params: Total expected rows (approximate): 0
+0061.776 (0) Table hp_ak_params: Total rows added: 1 in 0.02 seconds
+0061.860 (0) Table hp_ak_params: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_params.table.gz - 0.3 KB)
+0061.963 (0) Table hp_ak_profiles: Total expected rows (approximate): 0
+0062.024 (0) Table hp_ak_profiles: Total rows added: 1 in 0.02 seconds
+0062.066 (0) Table hp_ak_profiles: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_profiles.table.gz - 1.2 KB)
+0062.218 (0) Table hp_ak_stats: Total expected rows (approximate): 10
+0062.279 (0) Table hp_ak_stats: Total rows added: 10 in 0.02 seconds
+0062.334 (0) Table hp_ak_stats: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_stats.table.gz - 1.2 KB)
+0062.629 (0) Table hp_ak_storage: Total expected rows (approximate): 2
+0062.692 (0) Table hp_ak_storage: Total rows added: 2 in 0.02 seconds
+0062.761 (0) Table hp_ak_storage: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_storage.table.gz - 2.6 KB)
+0062.924 (0) Table hp_ak_users: Total expected rows (approximate): 0
+0063.041 (0) Table hp_ak_users: Total rows added: 0 in 0.04 seconds
+0063.096 (0) Table hp_ak_users: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_users.table.gz - 0.3 KB)
+0063.227 (0) Table hp_akeeba_common: Total expected rows (approximate): 3
+0063.305 (0) Table hp_akeeba_common: Total rows added: 3 in 0.01 seconds
+0063.353 (0) Table hp_akeeba_common: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_akeeba_common.table.gz - 0.4 KB)
+0063.671 (0) Table hp_cwa: Total expected rows (approximate): 0
+0063.741 (0) Table hp_cwa: Total rows added: 1 in 0.03 seconds
+0063.815 (0) Table hp_cwa: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_cwa.table.gz - 0.4 KB)
+0064.079 (0) Table hp_downloadstatus: Total expected rows (approximate): 3
+0064.174 (0) Table hp_downloadstatus: Total rows added: 3 in 0.02 seconds
+0064.310 (0) Table hp_downloadstatus: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_downloadstatus.table.gz - 0.5 KB)
+0064.740 (0) Table hp_em_modal_metas: Total expected rows (approximate): 0
+0064.822 (0) Table hp_em_modal_metas: Total rows added: 0 in 0.04 seconds
+0064.899 (0) Table hp_em_modal_metas: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_modal_metas.table.gz - 0.3 KB)
+0065.103 (0) Table hp_em_modals: Total expected rows (approximate): 0
+0065.198 (0) Table hp_em_modals: Total rows added: 0 in 0.03 seconds
+0065.264 (0) Table hp_em_modals: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_modals.table.gz - 0.4 KB)
+0065.521 (0) Table hp_em_theme_metas: Total expected rows (approximate): 0
+0065.874 (0) Table hp_em_theme_metas: Total rows added: 1 in 0.13 seconds
+0065.984 (0) Table hp_em_theme_metas: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_theme_metas.table.gz - 0.8 KB)
+0066.325 (0) Table hp_em_themes: Total expected rows (approximate): 0
+0066.450 (0) Table hp_em_themes: Total rows added: 1 in 0.05 seconds
+0066.599 (0) Table hp_em_themes: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_themes.table.gz - 0.4 KB)
+0066.910 (0) Table hp_es_deliverreport: Total expected rows (approximate): 0
+0066.986 (0) Table hp_es_deliverreport: Total rows added: 0 in 0.03 seconds
+0067.066 (0) Table hp_es_deliverreport: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_deliverreport.table.gz - 0.4 KB)
+0067.266 (0) Table hp_es_emaillist: Total expected rows (approximate): 2
+0067.312 (0) Table hp_es_emaillist: Total rows added: 2 in 0.01 seconds
+0067.357 (0) Table hp_es_emaillist: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_emaillist.table.gz - 0.5 KB)
+0067.643 (0) Table hp_es_notification: Total expected rows (approximate): 1
+0067.716 (0) Table hp_es_notification: Total rows added: 1 in 0.02 seconds
+0067.774 (0) Table hp_es_notification: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_notification.table.gz - 0.4 KB)
+0067.917 (0) Table hp_es_pluginconfig: Total expected rows (approximate): 1
+0067.991 (0) Table hp_es_pluginconfig: Total rows added: 1 in 0.01 seconds
+0068.048 (0) Table hp_es_pluginconfig: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_pluginconfig.table.gz - 1 KB)
+0068.166 (0) Table hp_es_sentdetails: Total expected rows (approximate): 0
+0068.202 (0) Table hp_es_sentdetails: Total rows added: 0 in 0.01 seconds
+0068.260 (0) Table hp_es_sentdetails: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_sentdetails.table.gz - 0.4 KB)
+0068.491 (0) Table hp_es_templatetable: Total expected rows (approximate): 3
+0068.584 (0) Table hp_es_templatetable: Total rows added: 3 in 0.03 seconds
+0068.635 (0) Table hp_es_templatetable: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_templatetable.table.gz - 1 KB)
+0068.792 (0) Table hp_gdbc_attempts: Total expected rows (approximate): 303
+0068.908 (0) Table hp_gdbc_attempts: Total rows added: 303 in 0.06 seconds
+0068.959 (0) Table hp_gdbc_attempts: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_gdbc_attempts.table.gz - 3.9 KB)
+0069.111 (0) Table hp_msdb_post_data: Total expected rows (approximate): 0
+0069.179 (0) Table hp_msdb_post_data: Total rows added: 1 in 0.03 seconds
+0069.234 (0) Table hp_msdb_post_data: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_msdb_post_data.table.gz - 0.4 KB)
+0069.420 (0) Table hp_msdb_purchase: Total expected rows (approximate): 1
+0069.602 (0) Table hp_msdb_purchase: Total rows added: 1 in 0.10 seconds
+0069.694 (0) Table hp_msdb_purchase: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_msdb_purchase.table.gz - 0.5 KB)
+0069.951 (0) Table hp_newmail: Total expected rows (approximate): 749
+0070.083 (0) Table hp_newmail: Total rows added: 749 in 0.05 seconds
+0070.159 (0) Table hp_newmail: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_newmail.table.gz - 5.6 KB)
+0070.319 (0) Table hp_offer_data: Total expected rows (approximate): 44
+0070.424 (0) Table hp_offer_data: Total rows added: 44 in 0.05 seconds
+0070.553 (0) Table hp_offer_data: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_offer_data.table.gz - 0.9 KB)
+0070.886 (0) Table hp_optimizepress_assets: Total expected rows (approximate): 0
+0071.082 (0) Table hp_optimizepress_assets: Total rows added: 0 in 0.03 seconds
+0071.193 (0) Table hp_optimizepress_assets: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_assets.table.gz - 0.3 KB)
+0071.377 (0) Table hp_optimizepress_launchfunnels: Total expected rows (approximate): 0
+0071.574 (0) Table hp_optimizepress_launchfunnels: Total rows added: 0 in 0.08 seconds
+0072.043 (0) Table hp_optimizepress_launchfunnels: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_launchfunnels.table.gz - 0.3 KB)
+0072.341 (0) Table hp_optimizepress_launchfunnels_pages: Total expected rows (approximate): 0
+0072.553 (0) Table hp_optimizepress_launchfunnels_pages: Total rows added: 0 in 0.09 seconds
+0072.664 (0) Table hp_optimizepress_launchfunnels_pages: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_launchfunnels_pages.table.gz - 0.3 KB)
+0072.875 (0) Table hp_optimizepress_layout_categories: Total expected rows (approximate): 6
+0073.001 (0) Table hp_optimizepress_layout_categories: Total rows added: 6 in 0.06 seconds
+0073.096 (0) Table hp_optimizepress_layout_categories: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_layout_categories.table.gz - 0.4 KB)
+0073.224 (0) Table hp_optimizepress_pb_products: Total expected rows (approximate): 0
+0073.282 (0) Table hp_optimizepress_pb_products: Total rows added: 0 in 0.02 seconds
+0073.333 (0) Table hp_optimizepress_pb_products: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_pb_products.table.gz - 0.3 KB)
+0073.452 (0) Table hp_optimizepress_post_layouts: Total expected rows (approximate): 13
+0073.568 (0) Table hp_optimizepress_post_layouts: Total rows added: 13 in 0.09 seconds
+0073.600 (0) Table hp_optimizepress_post_layouts: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_post_layouts.table.gz - 216.9 KB)
+0073.669 (0) Table hp_optimizepress_predefined_layouts: Total expected rows (approximate): 13
+0073.822 (0) Table hp_optimizepress_predefined_layouts: Total rows added: 19 in 0.13 seconds
+0073.849 (0) Table hp_optimizepress_predefined_layouts: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_predefined_layouts.table.gz - 191.7 KB)
+0073.911 (0) Table hp_optimizepress_presets: Total expected rows (approximate): 0
+0073.961 (0) Table hp_optimizepress_presets: Total rows added: 0 in 0.02 seconds
+0073.997 (0) Table hp_optimizepress_presets: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_presets.table.gz - 0.3 KB)
+0074.114 (0) Table hp_phppc_functions: Total expected rows (approximate): 11
+0074.175 (0) Table hp_phppc_functions: Total rows added: 11 in 0.02 seconds
+0074.207 (0) Table hp_phppc_functions: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_phppc_functions.table.gz - 7.4 KB)
+0074.334 (0) Table hp_popupallypro_stats_log: Total expected rows (approximate): 0
+0074.386 (0) Table hp_popupallypro_stats_log: Total rows added: 0 in 0.03 seconds
+0074.461 (0) Table hp_popupallypro_stats_log: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_popupallypro_stats_log.table.gz - 0.4 KB)
+0074.624 (0) Table hp_richreviews: Total expected rows (approximate): 46
+0074.686 (0) Table hp_richreviews: Total rows added: 46 in 0.03 seconds
+0074.729 (0) Table hp_richreviews: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_richreviews.table.gz - 7.4 KB)
+0074.854 (0) Table hp_simple_history: Total expected rows (approximate): 4029
+0075.082 (0) Table hp_simple_history: Total rows added: 4129 in 0.22 seconds
+0075.104 (0) Table hp_simple_history: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_simple_history.table.gz - 82.3 KB)
+0075.196 (0) Table hp_simple_history_contexts: Total expected rows (approximate): 51014
+0078.985 (0) Table hp_simple_history_contexts: Total rows added: 44022 in 3.74 seconds
+0079.085 (0) Table hp_simple_history_contexts: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_simple_history_contexts.table.gz - 662.5 KB)
+0079.237 (0) Table hp_sm_advanced_search_temp: Total expected rows (approximate): 0
+0079.291 (0) Table hp_sm_advanced_search_temp: Total rows added: 0 in 0.02 seconds
+0079.341 (0) Table hp_sm_advanced_search_temp: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_sm_advanced_search_temp.table.gz - 0.3 KB)
+0079.771 (0) Table hp_smush_dir_images: Total expected rows (approximate): 0
+0079.849 (0) Table hp_smush_dir_images: Total rows added: 0 in 0.02 seconds
+0079.891 (0) Table hp_smush_dir_images: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_smush_dir_images.table.gz - 0.4 KB)
+0079.999 (0) Table hp_temp: Total expected rows (approximate): 1
+0080.080 (0) Table hp_temp: Total rows added: 1 in 0.04 seconds
+0080.113 (0) Table hp_temp: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_temp.table.gz - 0.3 KB)
+0080.184 (0) Table hp_woocommerce_api_keys: Total expected rows (approximate): 2
+0080.218 (0) Table hp_woocommerce_api_keys: Total rows added: 2 in 0.01 seconds
+0080.257 (0) Table hp_woocommerce_api_keys: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_api_keys.table.gz - 0.8 KB)
+0080.319 (0) Table hp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 3
+0080.348 (0) Table hp_woocommerce_attribute_taxonomies: Total rows added: 3 in 0.01 seconds
+0080.434 (0) Table hp_woocommerce_attribute_taxonomies: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_attribute_taxonomies.table.gz - 0.5 KB)
+0080.510 (0) Table hp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 37
+0080.547 (0) Table hp_woocommerce_downloadable_product_permissions: Total rows added: 37 in 0.02 seconds
+0080.572 (0) Table hp_woocommerce_downloadable_product_permissions: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_downloadable_product_permissions.table.gz - 1.8 KB)
+0080.668 (0) Table hp_woocommerce_order_items: Total expected rows (approximate): 1244
+0080.775 (0) Table hp_woocommerce_order_items: Total rows added: 1244 in 0.08 seconds
+0080.821 (0) Table hp_woocommerce_order_items: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_order_items.table.gz - 9.1 KB)
+0080.894 (0) Table hp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0080.914 (0) Table hp_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.01 seconds
+0080.954 (0) Table hp_woocommerce_payment_tokenmeta: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0081.034 (0) Table hp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0081.071 (0) Table hp_woocommerce_payment_tokens: Total rows added: 0 in 0.01 seconds
+0081.097 (0) Table hp_woocommerce_payment_tokens: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0081.166 (0) Table hp_woocommerce_sessions: Total expected rows (approximate): 1
+0081.191 (0) Table hp_woocommerce_sessions: Total rows added: 1 in 0.01 seconds
+0081.229 (0) Table hp_woocommerce_sessions: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_sessions.table.gz - 0.7 KB)
+0081.277 (0) Table hp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 0
+0081.297 (0) Table hp_woocommerce_shipping_zone_locations: Total rows added: 0 in 0.01 seconds
+0081.331 (0) Table hp_woocommerce_shipping_zone_locations: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0081.512 (0) Table hp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 0
+0081.549 (0) Table hp_woocommerce_shipping_zone_methods: Total rows added: 0 in 0.01 seconds
+0081.617 (0) Table hp_woocommerce_shipping_zone_methods: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0081.866 (0) Table hp_woocommerce_shipping_zones: Total expected rows (approximate): 0
+0081.993 (0) Table hp_woocommerce_shipping_zones: Total rows added: 0 in 0.05 seconds
+0082.141 (0) Table hp_woocommerce_shipping_zones: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zones.table.gz - 0.3 KB)
+0082.389 (0) Table hp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0082.548 (0) Table hp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.07 seconds
+0082.643 (0) Table hp_woocommerce_tax_rate_locations: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0082.784 (0) Table hp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0082.850 (0) Table hp_woocommerce_tax_rates: Total rows added: 1 in 0.02 seconds
+0082.881 (0) Table hp_woocommerce_tax_rates: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_tax_rates.table.gz - 0.5 KB)
+0082.953 (0) Table hp_woof_query_cache: Total expected rows (approximate): 0
+0083.031 (0) Table hp_woof_query_cache: Total rows added: 0 in 0.01 seconds
+0083.094 (0) Table hp_woof_query_cache: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_query_cache.table.gz - 0.3 KB)
+0083.644 (0) Table hp_woof_stat_buffer: Total expected rows (approximate): 0
+0083.696 (0) Table hp_woof_stat_buffer: Total rows added: 0 in 0.02 seconds
+0083.751 (0) Table hp_woof_stat_buffer: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_stat_buffer.table.gz - 0.4 KB)
+0083.869 (0) Table hp_woof_stat_tmp: Total expected rows (approximate): 0
+0083.900 (0) Table hp_woof_stat_tmp: Total rows added: 0 in 0.02 seconds
+0083.932 (0) Table hp_woof_stat_tmp: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_stat_tmp.table.gz - 0.4 KB)
+0083.987 (0) Table hp_wpss_answers_30: Total expected rows (approximate): 6
+0084.046 (0) Table hp_wpss_answers_30: Total rows added: 6 in 0.03 seconds
+0084.088 (0) Table hp_wpss_answers_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_answers_30.table.gz - 0.4 KB)
+0084.209 (0) Table hp_wpss_fields_30: Total expected rows (approximate): 2
+0084.345 (0) Table hp_wpss_fields_30: Total rows added: 2 in 0.08 seconds
+0084.410 (0) Table hp_wpss_fields_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_fields_30.table.gz - 0.4 KB)
+0084.578 (0) Table hp_wpss_questions_30: Total expected rows (approximate): 3
+0084.611 (0) Table hp_wpss_questions_30: Total rows added: 3 in 0.02 seconds
+0084.638 (0) Table hp_wpss_questions_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_questions_30.table.gz - 0.4 KB)
+0084.685 (0) Table hp_wpss_quizzes_30: Total expected rows (approximate): 0
+0084.710 (0) Table hp_wpss_quizzes_30: Total rows added: 1 in 0.01 seconds
+0084.738 (0) Table hp_wpss_quizzes_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_quizzes_30.table.gz - 0.6 KB)
+0084.828 (0) Table hp_wpss_results_30: Total expected rows (approximate): 0
+0084.852 (0) Table hp_wpss_results_30: Total rows added: 0 in 0.01 seconds
+0084.880 (0) Table hp_wpss_results_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_results_30.table.gz - 0.4 KB)
+0085.056 (0) Table hp_wpss_routes_30: Total expected rows (approximate): 3
+0085.141 (0) Table hp_wpss_routes_30: Total rows added: 3 in 0.03 seconds
+0085.191 (0) Table hp_wpss_routes_30: finishing file (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_routes_30.table.gz - 0.4 KB)
+0085.318 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_options.table.gz (1/85): adding to final database dump
+0085.442 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_users.table.gz (2/85): adding to final database dump
+0085.498 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_usermeta.table.gz (3/85): adding to final database dump
+0085.646 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_commentmeta.table.gz (4/85): adding to final database dump
+0085.788 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_comments.table.gz (5/85): adding to final database dump
+0085.919 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_links.table.gz (6/85): adding to final database dump
+0086.035 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_postmeta.table.gz (7/85): adding to final database dump
+0086.555 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_posts.table.gz (8/85): adding to final database dump
+0088.028 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_snippets.table.gz (9/85): adding to final database dump
+0088.088 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_term_relationships.table.gz (10/85): adding to final database dump
+0088.316 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_term_taxonomy.table.gz (11/85): adding to final database dump
+0088.376 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_termmeta.table.gz (12/85): adding to final database dump
+0088.569 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_terms.table.gz (13/85): adding to final database dump
+0088.632 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_order_itemmeta.table.gz (14/85): adding to final database dump
+0088.784 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_termmeta.table.gz (15/85): adding to final database dump
+0088.870 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates.table.gz (16/85): adding to final database dump
+0088.951 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_attributes.table.gz (17/85): adding to final database dump
+0089.029 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_relations.table.gz (18/85): adding to final database dump
+0089.098 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_affiliates_users.table.gz (19/85): adding to final database dump
+0089.168 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_campaigns.table.gz (20/85): adding to final database dump
+0089.269 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_hits.table.gz (21/85): adding to final database dump
+0089.303 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_referrals.table.gz (22/85): adding to final database dump
+0089.365 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_robots.table.gz (23/85): adding to final database dump
+0089.535 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_uris.table.gz (24/85): adding to final database dump
+0089.569 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_aff_user_agents.table.gz (25/85): adding to final database dump
+0089.602 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_params.table.gz (26/85): adding to final database dump
+0089.661 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_profiles.table.gz (27/85): adding to final database dump
+0089.694 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_stats.table.gz (28/85): adding to final database dump
+0089.711 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_storage.table.gz (29/85): adding to final database dump
+0089.759 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_ak_users.table.gz (30/85): adding to final database dump
+0089.802 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_akeeba_common.table.gz (31/85): adding to final database dump
+0089.860 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_cwa.table.gz (32/85): adding to final database dump
+0089.913 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_downloadstatus.table.gz (33/85): adding to final database dump
+0089.954 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_modal_metas.table.gz (34/85): adding to final database dump
+0090.015 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_modals.table.gz (35/85): adding to final database dump
+0090.060 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_theme_metas.table.gz (36/85): adding to final database dump
+0090.102 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_em_themes.table.gz (37/85): adding to final database dump
+0090.134 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_deliverreport.table.gz (38/85): adding to final database dump
+0090.169 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_emaillist.table.gz (39/85): adding to final database dump
+0090.227 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_notification.table.gz (40/85): adding to final database dump
+0090.280 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_pluginconfig.table.gz (41/85): adding to final database dump
+0090.361 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_sentdetails.table.gz (42/85): adding to final database dump
+0090.487 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_es_templatetable.table.gz (43/85): adding to final database dump
+0090.683 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_gdbc_attempts.table.gz (44/85): adding to final database dump
+0090.731 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_msdb_post_data.table.gz (45/85): adding to final database dump
+0090.797 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_msdb_purchase.table.gz (46/85): adding to final database dump
+0090.886 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_newmail.table.gz (47/85): adding to final database dump
+0090.980 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_offer_data.table.gz (48/85): adding to final database dump
+0091.051 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_assets.table.gz (49/85): adding to final database dump
+0091.094 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_launchfunnels.table.gz (50/85): adding to final database dump
+0091.139 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_launchfunnels_pages.table.gz (51/85): adding to final database dump
+0091.177 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_layout_categories.table.gz (52/85): adding to final database dump
+0091.228 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_pb_products.table.gz (53/85): adding to final database dump
+0091.277 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_post_layouts.table.gz (54/85): adding to final database dump
+0091.377 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_predefined_layouts.table.gz (55/85): adding to final database dump
+0091.573 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_optimizepress_presets.table.gz (56/85): adding to final database dump
+0091.686 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_phppc_functions.table.gz (57/85): adding to final database dump
+0091.783 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_popupallypro_stats_log.table.gz (58/85): adding to final database dump
+0091.873 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_richreviews.table.gz (59/85): adding to final database dump
+0091.924 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_simple_history.table.gz (60/85): adding to final database dump
+0092.018 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_simple_history_contexts.table.gz (61/85): adding to final database dump
+0092.575 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_sm_advanced_search_temp.table.gz (62/85): adding to final database dump
+0092.611 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_smush_dir_images.table.gz (63/85): adding to final database dump
+0092.653 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_temp.table.gz (64/85): adding to final database dump
+0092.731 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_api_keys.table.gz (65/85): adding to final database dump
+0092.777 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_attribute_taxonomies.table.gz (66/85): adding to final database dump
+0092.834 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_downloadable_product_permissions.table.gz (67/85): adding to final database dump
+0092.884 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_order_items.table.gz (68/85): adding to final database dump
+0092.942 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_payment_tokenmeta.table.gz (69/85): adding to final database dump
+0093.020 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_payment_tokens.table.gz (70/85): adding to final database dump
+0093.063 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_sessions.table.gz (71/85): adding to final database dump
+0093.086 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zone_locations.table.gz (72/85): adding to final database dump
+0093.122 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zone_methods.table.gz (73/85): adding to final database dump
+0093.162 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_shipping_zones.table.gz (74/85): adding to final database dump
+0093.194 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_tax_rate_locations.table.gz (75/85): adding to final database dump
+0093.223 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woocommerce_tax_rates.table.gz (76/85): adding to final database dump
+0093.313 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_query_cache.table.gz (77/85): adding to final database dump
+0093.545 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_stat_buffer.table.gz (78/85): adding to final database dump
+0093.638 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_woof_stat_tmp.table.gz (79/85): adding to final database dump
+0093.706 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_answers_30.table.gz (80/85): adding to final database dump
+0093.844 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_fields_30.table.gz (81/85): adding to final database dump
+0093.942 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_questions_30.table.gz (82/85): adding to final database dump
+0094.014 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_quizzes_30.table.gz (83/85): adding to final database dump
+0094.086 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_results_30.table.gz (84/85): adding to final database dump
+0094.128 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db-table-hp_wpss_routes_30.table.gz (85/85): adding to final database dump
+0094.194 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz: finished writing out complete database file (6144 KB)
+0094.794 (0) Total database tables backed up: 85 (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz, size: 6320841, sha256)
+0095.099 (0) backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz: db: This file has not yet been successfully uploaded: will queue
+0095.186 (0) Saving backup history. Total backup size: 6 MB
+0095.261 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0095.866 (0) Cloud backup selection (1/1): dropbox (last)
+0095.944 (0) Beginning dispatch of backup to remote (dropbox)
+0096.009 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0096.612 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0097.486 (0) Dropbox quota usage: used=28347.8 MB, total=1058048 MB, available=1029700.2 MB
+0097.544 (0) Dropbox: Attempt to upload: backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz to: backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz
+0101.946 (0) Dropbox chunked upload: 16.6 % uploaded (AAAAAAAAGrNrW-Db3qoyNQ, 1048576, 2048 KB)
+0113.237 (0) Dropbox chunked upload: 49.8 % uploaded (AAAAAAAAGrNrW-Db3qoyNQ, 3145728, 2048 KB)
+0120.897 (0) Dropbox chunked upload: 82.9 % uploaded (AAAAAAAAGrNrW-Db3qoyNQ, 5242880, 2048 KB)
+0125.924 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAGrNrW-Db3qoyNQ, 6320841, 2048 KB)
+0128.590 (0) Recording as successfully uploaded: backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz (a4bd3352ab8d7992b5f433a86484a587)
+0128.728 (0) Deleting local file: backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz: OK
+0128.774 (0) Dropbox: File upload success (backup_2017-06-26-0800_Happivize_ad18e5e126ca-db.gz): 6172 KB in 31s (197 KB/s)
+0128.851 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=20, retain_db=26
+0128.885 (0) Number of backup sets in history: 4; groups (db): 1
+0128.926 (0) Examining (for databases) backup set with group_id=0, nonce=ad18e5e126ca, datestamp=1498478412 (Jun 26 2017 12:00:12)
+0128.960 (0) This backup set is the backup set just made, so will not be deleted.
+0128.982 (0) Examining (for databases) backup set with group_id=0, nonce=b284e6788368, datestamp=1497576416 (Jun 16 2017 01:26:56)
+0129.016 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.051 (0) Examining (for databases) backup set with group_id=0, nonce=f460d19aafed, datestamp=1496971589 (Jun 09 2017 01:26:29)
+0129.085 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.154 (0) Examining (for databases) backup set with group_id=0, nonce=dd24adae39d7, datestamp=1496366512 (Jun 02 2017 01:21:52)
+0129.215 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.258 (0) Number of backup sets in history: 4; groups (files): 1
+0129.321 (0) Examining (for files) backup set with nonce=ad18e5e126ca, datestamp=1498478412 (Jun 26 2017 12:00:12)
+0129.391 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.443 (0) Examining (for files) backup set with nonce=b284e6788368, datestamp=1497576416 (Jun 16 2017 01:26:56)
+0129.552 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.808 (0) Examining (for files) backup set with nonce=f460d19aafed, datestamp=1496971589 (Jun 09 2017 01:26:29)
+0129.910 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0129.960 (0) Examining (for files) backup set with nonce=dd24adae39d7, datestamp=1496366512 (Jun 02 2017 01:21:52)
+0130.034 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0130.049 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0130.150 (0) Resume backup (ad18e5e126ca, 0): finish run
+0130.283 (0) Decremented the semaphore (d) by 1
+0130.381 (0) Semaphore (d) unlocked
+0130.418 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0130.685 (0) Fetching RSS news feed
+0132.864 (0) Fetched RSS news feed; result is a: SimplePie
+0133.438 (0) Sending email ('Database only (files were not part of this particular schedule)') report (attachments: 0, size: 0 KB) to: eftco...
+0301.798 (0) The backup apparently succeeded and is now complete

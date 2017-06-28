@@ -3214,17 +3214,17 @@ button:focus {
     221);
     background-color:#f5f5f5;
 }
-.menu-affiliate-container .menu {
+.menu-affiliate-container .menu, .menu-vendor_menus-container .menu{
     background-color: rgb(241,
     240,
     240);
     margin-bottom: 0 !important;
 }
-#menu-affiliate {
+#menu-affiliate , #menu-vendor_menus{
     margin-left: 0;
     padding: 0;
 }
-#menu-affiliate .menu-item {
+#menu-affiliate .menu-item, #menu-vendor_menus .menu-item{
     list-style: outside none none;
     padding: 10px 10px 10px 40px;
     font-size: 14px;
@@ -3232,11 +3232,11 @@ button:focus {
     sans-serif;
     background-color: #F5F5F5;
 }
-#menu-affiliate .menu-item > a {
+#menu-affiliate .menu-item > a , #menu-vendor_menus .menu-item > a{
     font-family: "Proxima Nova",
     sans-serif !important;
 }
-#menu-affiliate .menu-item:hover {
+#menu-affiliate .menu-item:hover, #menu-vendor_menus .menu-item:hover {
     background-color: rgb(228,
     228,
     228);
@@ -3248,7 +3248,7 @@ button:focus {
 .login_mainform .forgot-password-lnk {
     margin-left: 27% !important;
 }
-.menu-item-897 {
+.menu-item-897 , #menu-item-32340{
     background-image: url('https://happivize.com/wp-content/uploads/2016/12/user-home-32.png');
     background-repeat: no-repeat;
     background-size: 10% 61%;
@@ -3257,7 +3257,7 @@ button:focus {
     240);
     background-position: 4% 7px !important;
 }
-.menu-item-898 {
+.menu-item-898 , #menu-item-32345{
     background-image: url('https://happivize.com/wp-content/uploads/2016/12/templates-32.png');
     background-repeat: no-repeat;
     background-size: 10% 61%;
@@ -3266,7 +3266,7 @@ button:focus {
     240);
     background-position: 4% 7px !important;
 }
-.menu-item-914 {
+.menu-item-914 , #menu-item-32347{
     background-image: url('https://happivize.com/wp-content/uploads/2017/01/reports-32.png');
     background-repeat: no-repeat;
     background-size: 10% 61%;
@@ -3275,20 +3275,22 @@ button:focus {
     240);
     background-position: 4% 7px !important;
 }
-#menu-affiliate li.current-menu-item {
+#menu-affiliate li.current-menu-item, #menu-vendor_menus li.current-menu-item {
     background: #ff9933 none repeat scroll 0 0;
 }
-#menu-affiliate li.current-menu-item:hover {
+#menu-affiliate li.current-menu-item:hover, #menu-vendor_menus li.current-menu-item:hover {
     background: #ff9933 none repeat scroll 0 0;
 }
-#menu-affiliate .current-menu-item > a {
+#menu-affiliate .current-menu-item > a, #menu-vendor_menus .current-menu-item > a {
     color: #fff;
 }
-#menu-affiliate .current-menu-item > a:hover {
+#menu-affiliate .current-menu-item > a:hover, #menu-vendor_menus .current-menu-item > a:hover {
     color: #fff;
 }
 #menu-item-898 > a,
-#menu-item-914 > a {
+#menu-item-914 > a , 
+#menu-item-32345 > a,
+#menu-item-32347 > a{
     color: #333 !important;
     font-weight: bold !important;
     pointer-events: none !important;
@@ -3297,30 +3299,37 @@ button:focus {
 }
 #menu-item-898,
 #menu-item-897,
-#menu-item-914 {
+#menu-item-914,
+#menu-item-32340,
+#menu-item-32345,
+#menu-item-32347 {
     background-color: #E4E4E4 !important;
 }
 .menu-item-type-custom {
     /* border-bottom: 1px solid rgb(221,221,221);    border-top: 1px solid rgb(221, 221, 221);*/
 }
-#menu-item-897 > a {
+#menu-item-897 > a, #menu-item-32340 > a {
     color: #333 !important;
     font-weight: bold;
     pointer-events: none;
     cursor: default;
 }
 #menu-item-898 a,
-#menu-item-914 a {
+#menu-item-914 a , 
+#menu-item-32345 a,
+#menu-item-32347 a{
     color:#333;
     font-weight: bold;
     pointer-events: none;
     cursor: default;
 }
 #menu-item-898 > a:hover,
-#menu-item-914 > a:hover {
+#menu-item-914 > a:hover ,
+#menu-item-32345 > a:hover,
+#menu-item-32347  > a:hover {
     background-color: none !important
 }
-#menu-item-897 > a:hover {
+#menu-item-897 > a:hover, #menu-item-32340 > a:hover {
     background-color: none !important
 }
 div.generate-field span.field-input input {

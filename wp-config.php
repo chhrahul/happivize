@@ -27,7 +27,7 @@ define('WP_MEMORY_LIMIT', '512M');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'happivize_new');
+define('DB_NAME', 'aimee_happivize');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -56,14 +56,14 @@ define('DB_COLLATE', '');
 *
 * @since 2.6.0
 */
-define('AUTH_KEY', 'dafbQCOwFXeyRF/Wa+UlLUrTb7mZF5TS26IkxO/NH2VuFrMIU/LfuaNWCrHdc8hU');
-define('SECURE_AUTH_KEY', 'lz9wYQstC/eKIfDNuwmAzLzurX8jZev3jw52MlxeeZmldZbBd3V296EmU5tuISRi');
-define('LOGGED_IN_KEY', 'rqKiRlNUX9Bm35lHtDDuP11ZvUdCjrRBAmrqqTbMJaCaWteG+7mrUA5Sc4frQ2M+');
-define('NONCE_KEY', 'eSxkM5PKQcIA4Dd7PtUZIvvSBuArEOzPsyp1cRmYUSnsNVt9rrq/pllzb2JlAkBN');
-define('AUTH_SALT', '5AssGKuhYeEriaQL/BoYRxBBY2DBhO4yMqpoGmRTN7E0Z+OL3+X4qSYEQgz+1Lru');
-define('SECURE_AUTH_SALT', 'nqcRUpy4YyDG3nXlUpLHf3dtQAkMg7gtfnfLPreR+xiBAMgsWOVBLWhZumuovWYB');
-define('LOGGED_IN_SALT', '+GEXh/LQr4ghMkMFZdlTrIO5EW3KkLmZTgoCoF1Ebkk+OfLPl+SezYN723OzH74/');
-define('NONCE_SALT', 'HXvQA7Uz+0zRIZlIDh9NlEkZ4E5IYI7n37M1t36rLB777pVSWQorNjmGWoAI/8Hd');
+define('AUTH_KEY', 'O8VZ5pEOIZx0fxTWGg6M52VVoeeRhFPFpDBN69/jrj6YFSCLu5FhPUZ98dwWPlLu');
+define('SECURE_AUTH_KEY', 'W9jjBa2EjqPZIuPTgB9WoVuWLDKxmUY3yTpk5R5Ts2hq+XOx5TALRb50bcx+zgkU');
+define('LOGGED_IN_KEY', 'L50+aHI2UjH+FqMz2rn7K6mIfcvRSI9rbZNCllcJw6bxVWniDCeI8Wu+S+pkX9XL');
+define('NONCE_KEY', 'qfcuxpgmJFhUAtrECp/1jVdS+khYr/071du6zmSdaS08wbOLpx58yLKMcvShigbe');
+define('AUTH_SALT', 'kVKx9pjcchumAeWG2bJjFZ9PPqE0kUQAmgSjNUP7ymjrKmfOrc29/1+8nnK74cjP');
+define('SECURE_AUTH_SALT', '5GE6OzlxP7UEq2u56nFkvXDW47c4eQMPdzzB5DkH+rq8WNTHOF5VO3gdnp/Yxwtu');
+define('LOGGED_IN_SALT', 'fxrt1Blfl95xp2m/X2YsAi7ibjo93UC5u8g5SufWZ7kQyWVk3XOxVXqIxWA9iU91');
+define('NONCE_SALT', 'vncx5+vZkNSvyr4SykFr+D0aDffF0yQfdFAYURNT8p8AF9T4CmV4V3Gs1UHgbmhd');
 
 /**#@-*/
 
@@ -87,11 +87,8 @@ $table_prefix = 'hp_';
 *
 * @link https://codex.wordpress.org/Debugging_in_WordPress
 */
-ini_set('display_errors','Off');
-ini_set('error_reporting', E_ALL );
-define('WP_DEBUG', false);
-define('WP_DEBUG_DISPLAY', false);
-
+//define('WP_DEBUG', false);
+//define('WP_DEBUG', 1 );
 define('WP_DEBUG_LOG', true );
 
 /* That's all, stop editing! Happy blogging. */

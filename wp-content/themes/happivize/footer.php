@@ -234,7 +234,7 @@ $(".wc-product-reviews-pro-profile").contents().appendTo('#tearev');
 
         e.preventDefault();    
 
-        window.open("https://happivize.com/my-ledger/", "_blank", "location=1,status=1,scrollbars=1,top=20,left=300,width=750,height=630");
+        window.open("https://localhost/happivize/my-ledger/", "_blank", "location=1,status=1,scrollbars=1,top=20,left=300,width=750,height=630");
 
   	});
 
